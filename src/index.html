@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenEFX Media: 3D Animation, VFX, Digital Marketing Training in Vellore</title>
+  <meta name="description"
+    content="Discover the best animation and training courses in Vellore! Specializing in VFX, 3D Animation, Digital Marketing, and more. Enroll now for summer courses!">
+  <meta name="keywords"
+    content="animation, vfx, 3d animation, digital marketing, advertisement, computer training, summer course, movie animation">
+  <link rel="icon" type="image/svg+xml" href="img/fav.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  @@include('partials/navbar.html')
+  @@include('partials/hero.html')
+  @@include('partials/stats.html')
+  @@include('partials/about.html')
+  <!-- @@include('partials/courses.html') -->
+  @@include('partials/services.html')
+  @@include('partials/why.html')
+  @@include('partials/faq.html')
+  @@include('partials/contact.html')
+  @@include('partials/footer.html')
+  <div class="datetime text-black d-flex justify-content-end align-items-center">
+    <span id="currentDate"></span>
+    <span id="currentTime"></span>
+  </div>
+  <script src="js/app.js"></script>
+
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const scriptURL = "https://script.google.com/macros/s/AKfycbyMPv5I6HbRfipj8_zN3xHZdzJoKicrLOdsI9auDAkF_5-Ps83ekf7qtYp1-gZ8tJuWhg/exec";
+
+      const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("successMessage");
+      const submitButton = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        form.classList.add("was-validated");
+
+        if (!form.checkValidity()) {
+          return;
+        }
+
+        submitButton.disabled = true;
+        submitButton.innerHTML = "Sending...";
+
+        successMessage.classList.add("d-none");
+
+        try {
+
+          const formData = new FormData(form);
+
+          const response = await fetch(scriptURL, {
+            method: "POST",
+            body: new URLSearchParams(formData),
+            mode: "no-cors"
+          });
+
+          // no-cors responses are opaque, so this confirms only dispatch.
+          successMessage.classList.remove("d-none");
+          successMessage.innerHTML =
+            '<i class="bi bi-check-circle-fill me-2"></i>' +
+            ' Your message has been sent successfully. Our team will get back to you shortly.';
+
+          form.reset();
+          form.classList.remove("was-validated");
+
+        } catch (error) {
+
+          console.error("Error:", error);
+
+          alert("Something went wrong. Please try again.");
+
+        } finally {
+
+          submitButton.disabled = false;
+          submitButton.innerHTML =
+            'Send Message <i class="bi bi-send-fill ms-2"></i>';
+
+        }
+
+      });
+
+    });
+
+  </script>
+  <script>
+    (function () {
+
+      const c = document.getElementById('bg');
+      if (!c) return;
+
+      const x = c.getContext('2d');
+
+      const reduce = window.matchMedia(
+        '(prefers-reduced-motion: reduce)'
+      ).matches;
+
+      let W, H, stars = [];
+
+      // Resize canvas
+      function resize() {
+
+        const r = c.parentElement.getBoundingClientRect();
+        const d = Math.min(window.devicePixelRatio || 1, 2);
+
+        W = r.width;
+        H = r.height;
+
+        c.width = W * d;
+        c.height = H * d;
+
+        x.setTransform(d, 0, 0, d, 0, 0);
+
+        // Create stars
+        stars = Array.from({
+          length: Math.round(W * H / 9000)
+        }, () => ({
+          x: Math.random() * W,
+          y: Math.random() * H * 0.7,
+          r: Math.random() * 1.8 + 0.5,
+          p: Math.random() * 6.28,
+          s: Math.random() * 2 + 0.5
+        }));
+
+      }
+
+      window.addEventListener('resize', resize);
+      resize();
+
+
+      // Mountain layers
+      const layers = [
+
+        {
+          y: 0.52,
+          a: 0.13,
+          sp: 0.00018,
+          f: 3.2,
+          c0: 'rgba(33,120,180,.75)',
+          c1: 'rgba(15,60,105,.2)'
+        },
+
+        {
+          y: 0.60,
+          a: 0.10,
+          sp: 0.00026,
+          f: 4.5,
+          c0: 'rgba(24,95,150,.75)',
+          c1: 'rgba(15,55,95,.2)'
+        },
+
+        {
+          y: 0.70,
+          a: 0.08,
+          sp: 0.00036,
+          f: 6.0,
+          c0: 'rgba(18,70,115,.85)',
+          c1: 'rgba(19,58,94,.3)'
+        }
+
+      ];
+
+
+      // Mountain ridge calculation
+      function ridge(t, L, k) {
+
+        const u = k / W;
+
+        return H * L.y - H * L.a * (
+
+          Math.sin(u * L.f * 6.28 + t * L.sp * 0.6) * 0.45 +
+
+          Math.sin(u * L.f * 13 + t * L.sp) * 0.3 +
+
+          Math.abs(
+            Math.sin(u * L.f * 27 - t * L.sp * 1.4)
+          ) * 0.25
+
+        );
+
+      }
+
+
+      // Animation
+      function frame(t) {
+
+        x.clearRect(0, 0, W, H);
+
+
+        // White blinking and glowing stars
+        for (const s of stars) {
+
+          // Smooth blinking with different speeds
+          const blink = Math.sin(t * 0.001 * s.s + s.p);
+
+          const a = reduce
+            ? 0.8
+            : 0.15 + 0.95 * Math.pow(Math.abs(blink), 3);
+
+          x.globalAlpha = a;
+
+          // Star color
+          x.fillStyle = '#ffffff';
+
+          // Glow effect
+          x.shadowBlur = 8;
+          x.shadowColor = 'rgba(255,255,255,0.9)';
+
+          x.beginPath();
+
+          x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+
+          x.fill();
+
+        }
+
+        // Reset canvas effects
+        x.globalAlpha = 1;
+        x.shadowBlur = 0;
+
+
+        // Animated mountain layers
+        for (const L of layers) {
+
+          const g = x.createLinearGradient(
+            0,
+            H * (L.y - L.a),
+            0,
+            H
+          );
+
+          g.addColorStop(0, L.c0);
+          g.addColorStop(1, L.c1);
+
+          x.fillStyle = g;
+
+          x.beginPath();
+
+          x.moveTo(0, H);
+
+          for (let k = 0; k <= W; k += 8) {
+
+            x.lineTo(
+              k,
+              ridge(reduce ? 0 : t, L, k)
+            );
+
+          }
+
+          x.lineTo(W, H);
+
+          x.closePath();
+
+          x.fill();
+
+        }
+
+
+        // Continue animation
+        if (!reduce) {
+          requestAnimationFrame(frame);
+        }
+
+      }
+
+
+      requestAnimationFrame(frame);
+
+    })();
+
+
+    // Navbar scroll effect
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const navbar = document.querySelector(".site-nav");
+
+      if (!navbar) return;
+
+      window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 50) {
+
+          navbar.classList.add("scrolled");
+
+        } else {
+
+          navbar.classList.remove("scrolled");
+
+        }
+
+      });
+
+    });
+
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW({
+      animateClass: 'animate__animated',  // required for Animate.css v4
+      offset: 0,
+      mobile: true
+    }).init();
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const counters = document.querySelectorAll(".stat");
+
+      const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+          if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const target = Number(counter.dataset.count);
+            const suffix = counter.dataset.suffix || "";
+
+            let count = 0;
+            const duration = 2000;
+            const increment = target / (duration / 16);
+
+            function updateCounter() {
+
+              count += increment;
+
+              if (count < target) {
+                counter.textContent = Math.ceil(count) + suffix;
+                requestAnimationFrame(updateCounter);
+              } else {
+                counter.textContent = target + suffix;
+              }
+            }
+
+            updateCounter();
+            observer.unobserve(counter);
+          }
+
+        });
+
+      }, { threshold: 0.5 });
+
+      counters.forEach(counter => observer.observe(counter));
+
+    });
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6afeb272cf88643ca1c06740/1k7pei3uv';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+
+    const enquiryForm1 = document.getElementById("enquiryForm");
+    const submitBtn1 = document.getElementById("submitBtn1");
+    const thankYouMessage1 = document.getElementById("thankYouMessage1");
+    const formError1 = document.getElementById("formError1");
+
+    enquiryForm1.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      if (!enquiryForm1.checkValidity()) {
+        enquiryForm1.reportValidity();
+        return;
+      }
+
+      submitBtn1.disabled = true;
+      submitBtn1.textContent = "Submitting...";
+      formError1.classList.add("d-none");
+
+      try {
+        const formData1 = new FormData(enquiryForm1);
+
+        if (formData1.get("website1")) {
+          throw new Error("Invalid submission");
+        }
+
+        await fetch(
+          "https://script.google.com/macros/s/AKfycbz06l0jNWXfmrOqLwu_ByDzSJKs4WtTA3jHfZFmJ10sKgHwOuEHgFv-AL6CZQ4YBBBB/exec",
+          {
+            method: "POST",
+            mode: "no-cors",
+            body: JSON.stringify({
+              name: formData1.get("name1"),
+              email: formData1.get("email1"),
+              message: formData1.get("message1"),
+              website: formData1.get("website1")
+            })
+          }
+        );
+
+        // no-cors cannot verify backend success.
+        enquiryForm1.classList.add("d-none");
+        thankYouMessage1.classList.remove("d-none");
+        enquiryForm1.reset();
+
+      } catch (error) {
+        formError1.classList.remove("d-none");
+      } finally {
+        submitBtn1.disabled = false;
+        submitBtn1.textContent = "Submit Enquiry";
+      }
+    });
+
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

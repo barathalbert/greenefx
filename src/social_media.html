@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing &amp; Personal Branding in Vellore | GreenEFX Media</title>
+    <meta name="description"
+        content="Social media marketing and personal branding in Vellore. Instagram reels, Meta Ads, LinkedIn branding, professional videos and content management.">
+    <meta name="keywords"
+        content="social media marketing vellore, social media marketing agency vellore, instagram marketing, meta ads, linkedin personal branding, instagram reels production">
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons local file removed: icons now use Font Awesome below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Social Media Marketing page styles (scoped to .social) */
+        .social {
+            --g: #16a34a;
+            --g-dark: #0f7a37;
+            --g-soft: #e8f6ee;
+            --ink: #141f26;
+            --muted: #5b6770;
+            --bg: #f7faf8;
+            color: var(--ink)
+        }
+
+        .social h1,
+        .social h2,
+        .social h3,
+        .social h4,
+        .social h5 {
+            font-weight: 800;
+            letter-spacing: -.01em
+        }
+
+        .social section {
+            padding: 4.5rem 0
+        }
+
+        .social .text-green {
+            color: var(--g)
+        }
+
+        .social .btn-green {
+            background: var(--g);
+            border-color: var(--g);
+            color: #fff;
+            font-weight: 600;
+            padding: .8rem 1.6rem;
+            border-radius: .6rem
+        }
+
+        .social .btn-green:hover,
+        .social .btn-green:focus {
+            background: var(--g-dark);
+            border-color: var(--g-dark);
+            color: #fff
+        }
+
+        .social .hero {
+            background: linear-gradient(135deg, #0d1a14 0%, #12301f 60%, #16a34a 160%);
+            color: #fff;
+            padding: 5rem 0
+        }
+
+        .social .hero .tag {
+            color: #7ee2a4;
+            font-weight: 600
+        }
+
+        .social .hero p.lead {
+            color: #d3e6da
+        }
+
+        .social .hero-img {
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            background: #1b3a29
+        }
+
+        .social .bg-soft {
+            background: var(--bg)
+        }
+
+        .social .section-sub {
+            color: var(--muted);
+            max-width: 42rem
+        }
+
+        .social .service {
+            height: 100%;
+            border: 1px solid #e3ebe6;
+            border-radius: 1rem;
+            padding: 1.6rem;
+            background: #fff;
+            transition: border-color .2s
+        }
+
+        .social .service:hover {
+            border-color: var(--g)
+        }
+
+        .social .service .num {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem
+        }
+
+        .social .service small {
+            color: var(--g-dark);
+            font-weight: 600
+        }
+
+        .social .chip {
+            display: inline-block;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            border-radius: 2rem;
+            padding: .3rem .85rem;
+            margin: .2rem;
+            font-size: .9rem;
+            font-weight: 600
+        }
+
+        .social .pb-card {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.1rem;
+            background: #fff;
+            border-radius: .8rem;
+            border: 1px solid #e3ebe6;
+            height: 100%
+        }
+
+        .social .pb-card .ic {
+            flex: 0 0 2.6rem;
+            height: 2.6rem;
+            border-radius: .6rem;
+            background: var(--g);
+            color: #fff;
+            font-weight: 800;
+            font-size: .85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .social .platform {
+            text-align: center;
+            padding: 1.6rem;
+            border-radius: 1rem;
+            background: #fff;
+            border: 1px solid #e3ebe6;
+            height: 100%
+        }
+
+        .social .platform i {
+            font-size: 2.2rem;
+            color: var(--g)
+        }
+
+        .social .step {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1.6rem
+        }
+
+        .social .step .n {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            background: var(--g);
+            color: #fff;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* Tick list: Font Awesome (fixes missing icons) */
+        .social .tick1 {
+            padding-left: 0
+        }
+
+        .social .tick1 li {
+            margin-bottom: .7rem;
+            list-style: none;
+            padding-left: 1.9rem;
+            position: relative
+        }
+
+        .social .tick1 li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--g);
+            position: absolute;
+            left: 0
+        }
+
+        .social .accordion-button:not(.collapsed) {
+            background: var(--g-soft);
+            color: var(--g-dark)
+        }
+
+        .social .accordion-button:focus {
+            box-shadow: 0 0 0 .2rem rgba(22, 163, 74, .25)
+        }
+
+        .social .cta-band {
+            background: linear-gradient(135deg, #0d1a14, #12301f);
+            color: #fff
+        }
+
+        .social .cta-band a.contact {
+            color: #9ff0bd;
+            text-decoration: none
+        }
+
+        .social .cta-band i {
+            color: #9ff0bd
+        }
+
+        .social .animate__fadeInUp {
+            --animate-duration: .8s;
+        }
+    </style>
+</head>
+
+<body>
+    @@include('partials/navbar.html')
+    <section class="social">
+        <header class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5 pt-5 mt-5">
+                    <div class="col-lg-6">
+                        <p class="tag mb-2">GreenEFX Media </p>
+                        <h1 class="display-4 mb-3">Social Media Marketing</h1>
+                        <h2 class="h4 mb-2">Build Your Brand. Engage Your Audience. Grow Your Business.</h2>
+                        <p class="lead">Creative Content. Powerful Campaigns. Meaningful Connections.</p>
+                        <p class="mb-4">Turn your social media presence into a powerful business growth opportunity.
+                            GreenEFX Media combines creative content, professional design, engaging reels, video
+                            production, targeted Meta advertising, and personal branding to help businesses and
+                            professionals build stronger digital identities.</p>
+                        <a href="#contact" class="btn btn-green btn-lg">Get a Free Social Media Consultation</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class=" hero-img-wrap w-100">
+                            <img src="img/digital_marketing.png" alt="Digital Marketing"
+                                class="img-fluid hero-image w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <h2 class="section-title text-green">About Our Social Media Marketing Services</h2>
+                        <h3 class="h5 mt-4">Your Brand Deserves More Than Just Likes</h3>
+                        <p class="fs-5 text-secondary">Successful social media marketing takes more than regular
+                            posting. It requires strategic planning, creative storytelling, consistent branding,
+                            audience engagement, and performance monitoring. At GreenEFX Media, we develop
+                            platform-specific campaigns for Instagram, Facebook, YouTube, and LinkedIn, tailored to
+                            business goals and audiences.</p>
+                        <p class="fs-4 fw-bold border-start border-4 border-success ps-3 mt-4">We don’t just create
+                            social media posts. We create content that builds brands and inspires action.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="bg-soft">
+            <div class="container">
+                <h2 class="section-title text-green">Our Social Media Marketing Services</h2>
+                <p class="section-sub mb-5">Nine services that cover content, video, advertising, and reporting.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">01</div>
+                            <h3 class="h5">Social Media Account Management</h3>
+                            <p>Build a consistent professional presence through profile optimization, content calendars,
+                                publishing, and coordinated brand messaging.</p><small>Profile Optimization • Scheduling
+                                • Monthly Calendars</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">02</div>
+                            <h3 class="h5">Creative Social Media Post Design</h3>
+                            <p>Create visually memorable promotional graphics, festival creatives, carousel posts,
+                                product graphics, and brand campaigns.</p><small>Posters • Carousels • Product
+                                Creatives</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">03</div>
+                            <h3 class="h5">Instagram Reels &amp; Short Video Production</h3>
+                            <p>Produce engaging short-form content with editing, motion graphics, creative transitions,
+                                and compelling storytelling.</p><small>Instagram Reels • Facebook Reels • YouTube
+                                Shorts</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">04</div>
+                            <h3 class="h5">Meta Ads – Facebook &amp; Instagram Advertising</h3>
+                            <p>Plan, launch, and optimize targeted advertising campaigns for brand awareness, enquiries,
+                                traffic, and potential sales.</p><small>Lead Generation • Awareness •
+                                Retargeting</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">05</div>
+                            <h3 class="h5">Social Media Video Advertisements</h3>
+                            <p>Produce promotional videos, product commercials, CGI advertisements, AI-assisted
+                                creatives, and motion graphics.</p><small>Product Videos • CGI • AI Creatives</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">06</div>
+                            <h3 class="h5">Content Strategy &amp; Copywriting</h3>
+                            <p>Develop strategic content calendars, brand messaging, captions, hashtag research, and
+                                campaign copy.</p><small>Content Planning • Captions • Campaign Writing</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">07</div>
+                            <h3 class="h5">Community Engagement &amp; Brand Reputation</h3>
+                            <p>Support professional communication with audience engagement workflows, comment
+                                monitoring, and reputation guidance.</p><small>Comment Monitoring • Response
+                                Guidance</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">08</div>
+                            <h3 class="h5">Social Media Analytics &amp; Reporting</h3>
+                            <p>Monitor reach, engagement, audience insights, and advertising metrics to refine campaigns
+                                over time.</p><small>Audience Insights • Monthly Reporting</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">09</div>
+                            <h3 class="h5">Personal Branding &amp; Professional Profile Management</h3>
+                            <p>Build a credible individual identity through personal brand strategy, LinkedIn and
+                                Instagram profiles, professional videos, portraits, and expert-led content.</p>
+                            <small>LinkedIn Branding • Personal Reels • Professional Profiles</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL BRANDING -->
+        <section id="personal">
+            <div class="container">
+                <h2 class="section-title text-green">Personal Branding – A Dedicated Service</h2>
+                <h3 class="h5 mb-3">Build Your Identity. Establish Your Authority. Become a Recognized Brand.</h3>
+                <p class="section-sub mb-5">Your personal brand reflects your expertise, achievements, values, and
+                    professional story. GreenEFX Media helps entrepreneurs, business owners, doctors, consultants,
+                    corporate leaders, educators, and speakers develop an authentic and consistent online presence.</p>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">ID</div>
+                            <div>
+                                <h4 class="h6">Personal Brand Identity</h4>
+                                <p class="mb-0 small text-secondary">Professional positioning, visual identity,
+                                    messaging, and personal profile presentation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">IN</div>
+                            <div>
+                                <h4 class="h6">LinkedIn Personal Branding</h4>
+                                <p class="mb-0 small text-secondary">Profile optimization, thought-leadership content,
+                                    industry insights, and professional achievements.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">IG</div>
+                            <div>
+                                <h4 class="h6">Instagram &amp; Facebook Personal Branding</h4>
+                                <p class="mb-0 small text-secondary">Personal branding reels, engaging posts, and
+                                    platform-specific audience content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">VD</div>
+                            <div>
+                                <h4 class="h6">Personal Branding Video Production</h4>
+                                <p class="mb-0 small text-secondary">Introduction videos, career stories, expert
+                                    interviews, and professional promotional films.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">PH</div>
+                            <div>
+                                <h4 class="h6">Professional Photography &amp; Portfolio</h4>
+                                <p class="mb-0 small text-secondary">Portraits, business photography, and consistent
+                                    profile imagery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">EX</div>
+                            <div>
+                                <h4 class="h6">Thought Leadership &amp; Expert Content</h4>
+                                <p class="mb-0 small text-secondary">Educational reels, expert insights, interviews, and
+                                    knowledge-sharing content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">AW</div>
+                            <div>
+                                <h4 class="h6">Achievements &amp; Reputation Building</h4>
+                                <p class="mb-0 small text-secondary">Creative presentation of milestones, awards,
+                                    professional achievements, and success stories.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="pb-card">
+                            <div class="ic">CM</div>
+                            <div>
+                                <h4 class="h6">Personal Brand Content Management</h4>
+                                <p class="mb-0 small text-secondary">Monthly calendars, publishing support, and
+                                    performance monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLATFORMS -->
+        <section class="bg-soft">
+            <div class="container">
+                <h2 class="section-title text-green mb-4">Social Media Platforms We Manage</h2>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="platform"><i class="fa-brands fa-instagram"></i>
+                            <h3 class="h5 mt-2">Instagram</h3>
+                            <p class="mb-0 text-secondary">Reels, visual storytelling, carousels, and audience
+                                engagement.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="platform"><i class="fa-brands fa-facebook"></i>
+                            <h3 class="h5 mt-2">Facebook</h3>
+                            <p class="mb-0 text-secondary">Business promotions, community content, and Meta advertising.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="platform"><i class="fa-brands fa-youtube"></i>
+                            <h3 class="h5 mt-2">YouTube</h3>
+                            <p class="mb-0 text-secondary">Promotional videos, Shorts, channel content, and video
+                                creatives.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="platform"><i class="fa-brands fa-linkedin"></i>
+                            <h3 class="h5 mt-2">LinkedIn</h3>
+                            <p class="mb-0 text-secondary">Professional branding, corporate communication, and B2B
+                                thought leadership.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY + INDUSTRIES -->
+        <section>
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="section-title text-green">Why Choose GreenEFX Media?</h2>
+                        <ul class="tick1 p-0 mt-4">
+                            <li><strong>Creative design expertise:</strong> branded graphics, campaign visuals, and
+                                professional content.</li>
+                            <li><strong>In-house video production:</strong> reels, promotional videos, and motion
+                                graphics.</li>
+                            <li><strong>3D, CGI, and AI capabilities:</strong> distinctive visuals beyond conventional
+                                social posts.</li>
+                            <li><strong>Targeted advertising:</strong> Meta campaign strategy and optimization.</li>
+                            <li><strong>Consistent brand communication:</strong> planned content and coordinated
+                                publishing.</li>
+                            <li><strong>Performance monitoring:</strong> evaluate available metrics and improve
+                                campaigns.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="bg-soft">
+            <div class="container">
+                <h2 class="section-title text-green mb-5">Our Social Media Marketing Process</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">1</div>
+                            <h3 class="h5">Brand Discovery &amp; Audience Research</h3>
+                            <p class="text-secondary mb-0">Understand the business, identity, competitors, audience, and
+                                goals.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">2</div>
+                            <h3 class="h5">Strategy &amp; Content Planning</h3>
+                            <p class="text-secondary mb-0">Select platforms, themes, and a monthly publishing calendar.
+                            </p>
+                        </div>
+                        <div class="step">
+                            <div class="n">3</div>
+                            <h3 class="h5">Creative Design &amp; Video Production</h3>
+                            <p class="text-secondary mb-0">Develop approved graphics, reels, advertisements, and
+                                captions.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">4</div>
+                            <h3 class="h5">Content Review &amp; Publishing</h3>
+                            <p class="text-secondary mb-0">Schedule and publish approved content.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">5</div>
+                            <h3 class="h5">Advertising Campaign Management</h3>
+                            <p class="text-secondary mb-0">Launch targeted Meta campaigns where required.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">6</div>
+                            <h3 class="h5">Performance Monitoring &amp; Optimization</h3>
+                            <p class="text-secondary mb-0">Review reach, engagement, campaign results, and
+                                opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+     
+
+        <!-- FAQ -->
+        <section id="faq" class="bg-soft">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="section-title text-green mb-4">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqs">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q1">Which platforms do you
+                                        manage?</button></h3>
+                                <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Instagram, Facebook, YouTube, and LinkedIn, based on
+                                        business needs.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q2">Do you create reels and
+                                        promotional videos?</button></h3>
+                                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We produce reels, short-form advertisements, motion
+                                        graphics, and product videos.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q3">Do you provide Facebook and
+                                        Instagram advertising?</button></h3>
+                                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We offer Meta Ads planning, targeting, creative
+                                        development, management, and monitoring.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q4">Can you produce AI videos and 3D
+                                        animations?</button></h3>
+                                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. Our creative capabilities include AI-assisted
+                                        videos, CGI, 3D animation, and motion graphics.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q5">Do you offer personal branding
+                                        for professionals?</button></h3>
+                                <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We help entrepreneurs, doctors, consultants, and
+                                        leaders with LinkedIn, Instagram, videos, photography, and content strategy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q6">How many posts and reels are
+                                        included monthly?</button></h3>
+                                <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Deliverables depend on the selected package and agreed
+                                        production plan.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q7">Is the advertising budget
+                                        included?</button></h3>
+                                <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Advertising spend is generally separate from creative
+                                        and management fees.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#q8">How soon can results be
+                                        expected?</button></h3>
+                                <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Results depend on audience, competition, creative
+                                        quality, consistency, and advertising budget.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / CONTACT -->
+        <section id="contact" class="cta-band text-center">
+            <div class="container">
+                <h2 class="display-6 mb-2">Ready to Make Your Brand Stand Out?</h2>
+                <p class="fs-5 mb-1">Creative Content. Stronger Engagement. Better Business Opportunities.</p>
+                <p class="mx-auto mb-4" style="max-width:40rem;color:#d3e6da">Partner with GreenEFX Media for social
+                    media marketing, professional reels, Meta Ads, and personal branding.</p>
+                <p class="mb-1"><i class="fa-solid fa-phone me-2"></i><a class="contact" href="tel:+919940338307">+91
+                        99403 38307</a>
+                    <span class="mx-2 d-none d-sm-inline">|</span><br class="d-sm-none">
+                    <i class="fa-solid fa-envelope me-2"></i><a class="contact"
+                        href="mailto:greenefx.media@gmail.com">greenefx.media@gmail.com</a>
+                </p>
+                <p class="mb-4"><i class="fa-solid fa-location-dot me-2"></i>Sathuvachari, Vellore, Tamil Nadu | <a
+                        class="contact" href="https://www.greenefxmedia.com">www.greenefxmedia.com</a></p>
+                <a href="mailto:greenefx.media@gmail.com?subject=Free%20Social%20Media%20Consultation"
+                    class="btn btn-green btn-lg">Get a Free Social Media Consultation</a>
+            </div>
+        </section>
+    </section>
+    @@include('partials/footer.html')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        // Navbar scroll effect
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".site-nav");
+            if (!navbar) return;
+            window.addEventListener("scroll", function () {
+                navbar.classList.toggle("scrolled", window.scrollY > 50);
+            });
+        });
+    </script>
+    <script>
+        // WOW.js fade-up animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const targets = document.querySelectorAll(
+                ".social .hero .col-lg-6, .social section h2, .social .section-sub, " +
+                ".social #about .col-lg-9 > *, .social .service, .social .pb-card, .social .platform, " +
+                ".social .chip, .social .step, .social .tick1 li, .social .accordion-item, " +
+                ".social .cta-band .btn-green, .social .cta-band .container > p"
+            );
+            const counts = new Map();
+            targets.forEach(function (el) {
+                const group = el.matches("li") ? el.parentElement : (el.closest(".row") || el.parentElement);
+                const i = counts.get(group) || 0;
+                counts.set(group, i + 1);
+                el.classList.add("wow", "animate__fadeInUp");
+                el.setAttribute("data-wow-delay", ((i % 4) * 0.12).toFixed(2) + "s");
+            });
+            new WOW({ boxClass: "wow", animateClass: "animate__animated", offset: 60, mobile: true, live: false }).init();
+        });
+    </script>
+</body>
+
+</html>

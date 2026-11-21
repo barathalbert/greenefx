@@ -1,0 +1,45 @@
+/* nav */
+.site-nav{background:rgba(247,250,247,.92);backdrop-filter:blur(8px);}
+.brand{font-weight:800;font-size:1.35rem;color:var(--forest)}
+.brand span{color:var(--key-dark)}
+.nav-link{color:var(--ink);font-weight:500}
+.nav-link:hover{color:var(--key-dark)}
+
+/* buttons */
+.btn-key{background:var(--key);border-color:var(--key);color:#04200f;font-weight:600}
+.btn-key:hover,.btn-key:focus{background:var(--key-dark);border-color:var(--key-dark);color:#fff}
+.btn-filter{border:1px solid var(--forest);color:var(--forest);background:transparent}
+.btn-filter.active,.btn-filter:hover{background:var(--forest);color:#fff}
+
+/* sections */
+.section{padding:5rem 0}
+.section-tint{background:var(--tint)}
+.section-dark{background:var(--ink);color:#e8f2ec}
+.section-dark h2,.section-dark h3{color:#fff}
+
+/* course cards */
+.card-course{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1.5rem;display:flex;flex-direction:column;transition:border-color .2s}
+.card-course:hover{border-color:var(--key-dark)}
+.card-course>i{font-size:1.8rem;color:var(--key-dark)}
+.card-course h3{margin:.75rem 0 .4rem}
+.card-course p{flex:1}
+.card-course .btn-link{padding:0;align-self:flex-start;font-weight:600;color:var(--forest)}
+.course.is-hidden{display:none}
+
+/* services */
+.service{border-top:3px solid var(--key);padding-top:1rem;height:100%}
+
+/* faq */
+.accordion-button:not(.collapsed){background:var(--tint);color:var(--ink);box-shadow:none}
+.accordion-button:focus{box-shadow:0 0 0 .2rem rgba(0,200,83,.35)}
+
+/* contact */
+.contact-list li{margin-bottom:.6rem}
+.contact-list i{color:var(--key-dark);margin-right:.5rem}
+.form-control:focus,.form-select:focus{border-color:var(--key-dark);box-shadow:0 0 0 .2rem rgba(0,200,83,.25)}
+
+/* footer */
+.site-footer{background:var(--ink);color:#c9ddd1;padding:1.5rem 0}
+.site-footer a{color:var(--key)}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

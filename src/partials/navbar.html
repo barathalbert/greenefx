@@ -1,0 +1,89 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top site-nav " data-aos="fade-down" data-aos-duration="1000">
+  <div class="container">
+    <a class="navbar-brand brand" href="../index.html">
+      <img class="img-fluid" src="img/efx.webp" alt="GreenEFX Media">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <!-- centered links -->
+      <ul class="navbar-nav mx-lg-auto align-items-lg-center gap-lg-4">
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#courses">Training</a></li>
+        <li class="nav-item"><a class="nav-link" href="../careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+      </ul>
+
+      <!-- right-side button -->
+      <a class="btn btn-enquire" href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal">
+        Enquire Now
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- ENQUIRY MODAL -->
+<div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="enquiryModalLabel">
+          Enquire Now
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <form id="enquiryForm">
+
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="name1" required placeholder="Enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="email1" required placeholder="Enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" name="message1" rows="4" required
+              placeholder="Enter your message"></textarea>
+          </div>
+
+          <!-- Honeypot spam protection -->
+          <input type="text" name="website1" class="d-none" tabindex="-1" autocomplete="off">
+
+          <button type="submit" class="btn btn-success w-100" id="submitBtn1">
+            Submit Enquiry
+          </button>
+
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="thankYouMessage1" class="text-center d-none">
+          <h4 class="text-success">Thank You!</h4>
+          <p>Your enquiry has been submitted successfully.
+            We will contact you soon.</p>
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+
+        <p id="formError1" class="text-danger mt-3 d-none">
+          Something went wrong. Please try again.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>

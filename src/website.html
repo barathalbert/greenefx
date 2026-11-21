@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design &amp; Development in Vellore | GreenEFX Media</title>
+    <meta name="description"
+        content="Website design and development in Vellore. Corporate sites, e-commerce, WordPress, domain registration, web hosting and maintenance by GreenEFX Media.">
+    <meta name="keywords"
+        content="Website designers Vellore, web development, domain registration assistance, web hosting services, server space, WordPress development, e-commerce website, responsive design, website maintenance">
+    <link rel="canonical" href="https://www.greenefxmedia.com/website-design-development">
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Service page styles (scoped to .svc) */
+        .svc {
+            --g: #16a34a;
+            --g-dark: #0f7a37;
+            --g-soft: #e8f6ee;
+            --ink: #141f26;
+            --muted: #5b6770;
+            --bg: #f7faf8;
+            color: var(--ink)
+        }
+
+        .svc h1,
+        .svc h2,
+        .svc h3,
+        .svc h4,
+        .svc h5 {
+            font-weight: 800;
+            letter-spacing: -.01em
+        }
+
+        .svc section {
+            padding: 4.5rem 0
+        }
+
+        .svc .text-green {
+            color: var(--g)
+        }
+
+        .svc .btn-green {
+            background: var(--g);
+            border-color: var(--g);
+            color: #fff;
+            font-weight: 600;
+            padding: .8rem 1.6rem;
+            border-radius: .6rem
+        }
+
+        .svc .btn-green:hover,
+        .svc .btn-green:focus {
+            background: var(--g-dark);
+            border-color: var(--g-dark);
+            color: #fff
+        }
+
+        .svc .btn-ghost {
+            border: 2px solid #7ee2a4;
+            color: #7ee2a4;
+            font-weight: 600;
+            padding: .75rem 1.5rem;
+            border-radius: .6rem
+        }
+
+        .svc .btn-ghost:hover {
+            background: #7ee2a4;
+            color: #0d1a14
+        }
+
+        .svc .hero {
+            background: linear-gradient(135deg, #0d1a14 0%, #12301f 60%, #16a34a 160%);
+            color: #fff;
+            padding: 5rem 0
+        }
+
+        .svc .hero .tag {
+            color: #7ee2a4;
+            font-weight: 600
+        }
+
+        .svc .hero .tagline {
+            color: #d3e6da
+        }
+
+        .svc .hero .note {
+            color: #a9c5b4;
+            font-size: .85rem;
+            margin-top: .6rem
+        }
+
+        .svc .hero-img {
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            background: #1b3a29
+        }
+
+        .svc .bg-soft {
+            background: var(--bg)
+        }
+
+        .svc .section-sub {
+            color: var(--muted);
+            max-width: 44rem
+        }
+
+        .svc .service {
+            height: 100%;
+            border: 1px solid #e3ebe6;
+            border-radius: 1rem;
+            padding: 1.6rem;
+            background: #fff;
+            transition: border-color .2s
+        }
+
+        .svc .service:hover {
+            border-color: var(--g)
+        }
+
+        .svc .service .num {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem
+        }
+
+        .svc .service .tagline {
+            color: var(--g-dark);
+            font-weight: 600;
+            margin-bottom: .5rem
+        }
+
+        .svc .service small {
+            color: var(--g-dark);
+            font-weight: 600;
+            display: block;
+            margin-top: .6rem
+        }
+
+        .svc .chip {
+            display: inline-block;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            border-radius: 2rem;
+            padding: .35rem .9rem;
+            margin: .25rem;
+            font-size: .95rem;
+            font-weight: 600
+        }
+
+        .svc .pb-card {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.1rem;
+            background: #fff;
+            border-radius: .8rem;
+            border: 1px solid #e3ebe6;
+            height: 100%
+        }
+
+        .svc .pb-card .ic {
+            flex: 0 0 2.6rem;
+            height: 2.6rem;
+            border-radius: .6rem;
+            background: var(--g);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .svc .callout {
+            height: 100%;
+            background: var(--g-soft);
+            border-left: 5px solid var(--g);
+            border-radius: .8rem;
+            padding: 1.6rem
+        }
+
+        .svc .callout h3 {
+            color: var(--g-dark)
+        }
+
+        .svc .gallery figure {
+            margin: 0
+        }
+
+        .svc .gallery img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 1px solid #e3ebe6
+        }
+
+        .svc .gallery figcaption {
+            margin-top: .6rem;
+            font-weight: 600;
+            color: var(--g-dark)
+        }
+
+        .svc .step {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1.6rem
+        }
+
+        .svc .step .n {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            background: var(--g);
+            color: #fff;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* Tick lists use Font Awesome */
+        .svc .tick1 {
+            padding-left: 0;
+            margin-bottom: 0
+        }
+
+        .svc .tick1 li {
+            margin-bottom: .7rem;
+            list-style: none;
+            padding-left: 1.9rem;
+            position: relative
+        }
+
+        .svc .tick1 li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--g);
+            position: absolute;
+            left: 0
+        }
+
+        .svc .accordion-button:not(.collapsed) {
+            background: var(--g-soft);
+            color: var(--g-dark)
+        }
+
+        .svc .accordion-button:focus {
+            box-shadow: 0 0 0 .2rem rgba(22, 163, 74, .25)
+        }
+
+        .svc .cta-band {
+            background: linear-gradient(135deg, #0d1a14, #12301f);
+            color: #fff
+        }
+
+        .svc .cta-band a.contact {
+            color: #9ff0bd;
+            text-decoration: none
+        }
+
+        .svc .cta-band i {
+            color: #9ff0bd
+        }
+
+        .svc .animate__fadeInUp {
+            --animate-duration: .8s
+        }
+    </style>
+</head>
+
+<body>
+    @@include('partials/navbar.html')
+    <section class="svc">
+
+        <header class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5 pt-5 mt-5">
+                    <div class="col-lg-6">
+                        <p class="tag mb-2">GreenEFX Media</p>
+                        <h2 class="display-4 mb-3">Website Design &amp; Development</h2>
+                        <h3 class="h4 mb-3 tagline">Creative Design. Smart Development. Powerful Digital Experiences.
+                        </h3>
+                        <p class="fs-5 fw-semibold mb-2">Build a Powerful Digital Presence with Professional Website
+                            Design</p>
+                        <p>Transform your business with a modern, visually engaging and performance-focused website.
+                            GreenEFX Media creates corporate websites, online stores, landing pages and custom web
+                            solutions that combine creative design with functionality, usability and an SEO-friendly
+                            foundation.</p>
+                        <div class="mt-4"><a href="#contact" class="btn btn-green btn-lg me-2 mb-2">Build Your Website
+                                With Us</a><a href="#services" class="btn btn-ghost btn-lg me-2 mb-2">Explore Our Web
+                                Solutions</a></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/website-hero.jpg"
+                            alt="Website mockups on a desktop monitor, laptop and smartphone"
+                            class="img-fluid hero-img">
+                        <p class="note mb-0">Images are conceptual illustrations, not client portfolio samples.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 class="text-green">About Our Website Design &amp; Development Services</h2>
+                        <p class="text-secondary">Your website is often a customer’s first interaction with your
+                            business. We develop responsive, professional websites that communicate your brand, showcase
+                            services and encourage enquiries. From planning and UI/UX to development, domain
+                            registration assistance, server hosting setup and ongoing maintenance, we provide a
+                            coordinated website solution.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="bg-soft">
+            <div class="container">
+                <h2 class="text-green">Our 10 Website Design &amp; Development Services</h2>
+                <p class="section-sub mb-5">From planning and design to hosting and maintenance.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">01</div>
+                            <h3 class="h5">Business &amp; Corporate Website Development</h3>
+                            <p class="mb-0">Professional business and corporate websites presenting your company
+                                profile, services, achievements and contact information.</p><small>Business websites •
+                                Corporate profiles • Service websites</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">02</div>
+                            <h3 class="h5">E-Commerce Website Development</h3>
+                            <p class="mb-0">Online stores with product catalogs, shopping carts, order management and
+                                payment gateway integration as required.</p><small>Online stores • Product catalogs •
+                                Payment integrations</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">03</div>
+                            <h3 class="h5">UI/UX Website Design</h3>
+                            <p class="mb-0">Intuitive, visually attractive website interfaces with thoughtful layouts,
+                                wireframes, navigation and consistent branding.</p><small>UI design • UX planning •
+                                Prototypes</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">04</div>
+                            <h3 class="h5">Responsive &amp; Mobile-Friendly Website Development</h3>
+                            <p class="mb-0">Layouts that adapt across smartphones, tablets, laptops and desktops, with
+                                clear navigation and accessible content.</p><small>Responsive design • Mobile UX •
+                                Cross-device layouts</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">05</div>
+                            <h3 class="h5">Landing Page Design &amp; Development</h3>
+                            <p class="mb-0">Focused landing pages for Google Ads, Meta Ads, product launches and
+                                lead-generation campaigns with clear calls to action.</p><small>Campaign pages • Lead
+                                capture • Product launches</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">06</div>
+                            <h3 class="h5">WordPress &amp; Content Management Websites</h3>
+                            <p class="mb-0">Content-managed websites allowing authorized users to update text, images,
+                                services and blog posts.</p><small>WordPress • CMS • Blog management</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">07</div>
+                            <h3 class="h5">SEO-Friendly Website Development</h3>
+                            <p class="mb-0">Search-friendly headings, page architecture, metadata support, internal
+                                links, optimized images and technical foundations.</p><small>On-page SEO • Technical SEO
+                                • Page speed</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">08</div>
+                            <h3 class="h5">Website Maintenance &amp; Technical Support</h3>
+                            <p class="mb-0">Ongoing content updates, backups, troubleshooting, software updates and
+                                performance checks under agreed support plans.</p><small>Updates • Backups •
+                                Support</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">09</div>
+                            <h3 class="h5">Custom Website &amp; Web Application Development</h3>
+                            <p class="mb-0">Tailored solutions including booking systems, enquiry portals, registration
+                                forms and administrative dashboards.</p><small>Custom portals • Bookings •
+                                Dashboards</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">10</div>
+                            <h3 class="h5">Domain Registration &amp; Web Hosting Services</h3>
+                            <p class="mb-0">Assistance with domain purchase and renewals; hosting or server-space
+                                selection; DNS, SSL, professional email, migration and deployment. Shared, VPS, cloud or
+                                dedicated server options can be assessed based on project needs. Third-party charges may
+                                apply.</p><small>Domain purchase • Server space • DNS • SSL • Email • Hosting
+                                support</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <div class="container">
+                <h2 class="text-green mb-4">Visual Highlights</h2>
+                <div class="row g-4 gallery">
+                    <div class="col-md-4">
+                        <figure><img src="img/website-1.jpg" alt="E-commerce websites" loading="lazy">
+                            <figcaption>E-commerce websites</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure><img src="img/website-2.jpg" alt="UI/UX design &amp; content management" loading="lazy">
+                            <figcaption>UI/UX design &amp; content management</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure><img src="img/website-3.jpg" alt="Domain, hosting &amp; server infrastructure"
+                                loading="lazy">
+                            <figcaption>Domain, hosting &amp; server infrastructure</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="section-sub mt-4 mb-0 small">Images are conceptual illustrations, not client portfolio
+                    samples.</p>
+            </div>
+        </section>
+
+        <!-- WHY -->
+        <section id="why" class="bg-soft">
+            <div class="container">
+                <h2 class="text-green">Why Choose GreenEFX Media?</h2>
+                <div class="mb-4"></div>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">Creative design</h4>
+                                <p class="mb-0 small text-secondary">Professional brand-led layouts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">Responsive development</h4>
+                                <p class="mb-0 small text-secondary">Usable across devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">SEO-friendly foundations</h4>
+                                <p class="mb-0 small text-secondary">Organized site structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">Custom functionality</h4>
+                                <p class="mb-0 small text-secondary">Solutions tailored to business workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">Domain and hosting support</h4>
+                                <p class="mb-0 small text-secondary">Assistance from purchase to deployment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="pb-card">
+                            <div class="ic"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="h6">Maintenance</h4>
+                                <p class="mb-0 small text-secondary">Support options after launch.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+
+
+        <!-- PROCESS -->
+        <section id="process" class="bg-soft">
+            <div class="container">
+                <h2 class="text-green mb-5">Our Website Development Process</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">1</div>
+                            <h3 class="h5">Requirements &amp; Consultation</h3>
+                            <p class="text-secondary mb-0">Identify objectives, audience, website features, domain and
+                                hosting needs.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">2</div>
+                            <h3 class="h5">Website Planning</h3>
+                            <p class="text-secondary mb-0">Plan pages, navigation, content and technical requirements.
+                            </p>
+                        </div>
+                        <div class="step">
+                            <div class="n">3</div>
+                            <h3 class="h5">UI/UX Design</h3>
+                            <p class="text-secondary mb-0">Develop visual layouts, wireframes and brand-aligned designs.
+                            </p>
+                        </div>
+                        <div class="step">
+                            <div class="n">4</div>
+                            <h3 class="h5">Development &amp; Integration</h3>
+                            <p class="text-secondary mb-0">Build approved pages, forms, CMS and agreed features.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">5</div>
+                            <h3 class="h5">Domain, Hosting &amp; SEO Setup</h3>
+                            <p class="text-secondary mb-0">Connect domain, configure hosting/server space and SSL,
+                                integrate content and essential SEO settings.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">6</div>
+                            <h3 class="h5">Testing &amp; Quality Assurance</h3>
+                            <p class="text-secondary mb-0">Test links, forms, responsiveness, usability and
+                                functionality.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">7</div>
+                            <h3 class="h5">Launch &amp; Support</h3>
+                            <p class="text-secondary mb-0">Deploy the website and provide agreed maintenance and renewal
+                                assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+
+        <!-- FAQ -->
+        <section id="faq" class="bg-soft">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-green mb-4">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqs">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq1">What websites do you
+                                        develop?</button></h3>
+                                <div id="fq1" class="accordion-collapse collapse show" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Corporate sites, e-commerce stores, landing pages,
+                                        WordPress sites and custom web applications.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq2">Will my website work on mobile
+                                        phones?</button></h3>
+                                <div id="fq2" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes, responsive layouts are part of our website design
+                                        approach.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq3">Can you redesign an existing
+                                        website?</button></h3>
+                                <div id="fq3" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes, we can modernize its appearance, content structure
+                                        and functionality.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq4">Do you help purchase domain
+                                        names?</button></h3>
+                                <div id="fq4" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We assist with domain selection, registration and
+                                        renewals. Domain fees may be charged separately.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq5">Do you provide hosting and
+                                        server space?</button></h3>
+                                <div id="fq5" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We assist in choosing and configuring shared, VPS,
+                                        cloud or dedicated hosting based on project requirements.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq6">Can I use my existing
+                                        domain?</button></h3>
+                                <div id="fq6" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We can help connect your existing domain to the new
+                                        website and suitable hosting.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq7">Do you set up SSL and business
+                                        email?</button></h3>
+                                <div id="fq7" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">SSL, DNS and professional email configuration can be
+                                        included in the agreed scope.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq8">Will the website be
+                                        SEO-friendly?</button></h3>
+                                <div id="fq8" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">We implement foundational technical and on-page SEO
+                                        practices; rankings are not guaranteed.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq9">Can I edit content
+                                        myself?</button></h3>
+                                <div id="fq9" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes, where a suitable content management system is
+                                        included.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq10">Do you offer
+                                        maintenance?</button></h3>
+                                <div id="fq10" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes, through an agreed maintenance and technical support
+                                        plan.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq11">How much does a website
+                                        cost?</button></h3>
+                                <div id="fq11" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">It depends on pages, features, design complexity,
+                                        integrations and hosting requirements.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / CONTACT -->
+        <section id="contact" class="cta-band text-center">
+            <div class="container">
+                <h2 class="display-6 mb-2">Ready to Build Your Website?</h2>
+
+                <p class="mx-auto mb-4" style="max-width:44rem;color:#d3e6da">From website design and development to
+                    domain purchase, hosting/server space, launch and maintenance, GreenEFX Media can support your
+                    digital presence.</p>
+                <p class="mb-1"><i class="fa-solid fa-phone me-2"></i><a class="contact" href="tel:+919940338307">+91
+                        99403 38307</a>
+                    <span class="mx-2 d-none d-sm-inline">|</span><br class="d-sm-none">
+                    <i class="fa-solid fa-envelope me-2"></i><a class="contact"
+                        href="mailto:greenefx.media@gmail.com">greenefx.media@gmail.com</a>
+                </p>
+                <p class="mb-4"><i class="fa-solid fa-location-dot me-2"></i>Sathuvachari, Vellore, Tamil Nadu | <a
+                        class="contact" href="https://www.greenefxmedia.com">www.greenefxmedia.com</a></p>
+                <a href="mailto:greenefx.media@gmail.com?subject=Website%20Design%20Enquiry"
+                    class="btn btn-green btn-lg">Build Your Website With Us</a>
+                <p class="mt-4 mb-0" style="color:#a9c5b4">GreenEFX Media — Creative. Digital. Impactful.</p>
+            </div>
+        </section>
+
+    </section>
+    @@include('partials/footer.html')
+
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"Website Design & Development","serviceType":"Website Design and Development in Vellore",
+"provider":{"@type":"LocalBusiness","name":"GreenEFX Media","telephone":"+91 99403 38307","email":"greenefx.media@gmail.com","url":"https://www.greenefxmedia.com",
+"address":{"@type":"PostalAddress","streetAddress":"Sathuvachari","addressLocality":"Vellore","addressRegion":"Tamil Nadu","addressCountry":"IN"}},
+"areaServed":"Vellore"}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".site-nav");
+            if (!navbar) return;
+            window.addEventListener("scroll", function () {
+                navbar.classList.toggle("scrolled", window.scrollY > 50);
+            });
+        });
+    </script>
+    <script>
+        // WOW.js fade-up animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const targets = document.querySelectorAll(
+                ".svc .hero .col-lg-6, .svc section h2, .svc .section-sub, " +
+                ".svc #about .col-lg-9 > *, .svc .service, .svc .pb-card, .svc .callout, .svc .gallery figure, " +
+                ".svc .chip, .svc .step, .svc .tick1 li, .svc .accordion-item, " +
+                ".svc .cta-band .btn-green, .svc .cta-band .container > p"
+            );
+            const counts = new Map();
+            targets.forEach(function (el) {
+                const group = el.matches("li") ? el.parentElement : (el.closest(".row") || el.parentElement);
+                const i = counts.get(group) || 0;
+                counts.set(group, i + 1);
+                el.classList.add("wow", "animate__fadeInUp");
+                el.setAttribute("data-wow-delay", ((i % 4) * 0.12).toFixed(2) + "s");
+            });
+            new WOW({ boxClass: "wow", animateClass: "animate__animated", offset: 60, mobile: true, live: false }).init();
+        });
+    </script>
+</body>
+
+</html>

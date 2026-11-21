@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video Generation &amp; Production in Vellore | GreenEFX Media</title>
+    <meta name="description"
+        content="AI video production by GreenEFX Media: commercials, product videos, avatars, Tamil advertising jingles, promotional songs and AI microdrama series.">
+    <meta name="keywords"
+        content="AI Video Generation, AI Commercial Production, AI Product Video, AI Advertising Jingles, Tamil Promotional Songs, AI Music Videos, AI Microdrama Production, Vertical Drama Series, AI Avatar Videos, AI VFX, AI Video Production Vellore">
+    <link rel="canonical" href="https://www.greenefxmedia.com/ai-video-production">
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Service page styles (scoped to .svc) */
+        .svc {
+            --g: #16a34a;
+            --g-dark: #0f7a37;
+            --g-soft: #e8f6ee;
+            --ink: #141f26;
+            --muted: #5b6770;
+            --bg: #f7faf8;
+            color: var(--ink)
+        }
+
+        .svc h1,
+        .svc h2,
+        .svc h3,
+        .svc h4,
+        .svc h5 {
+            font-weight: 800;
+            letter-spacing: -.01em
+        }
+
+        .svc section {
+            padding: 4.5rem 0
+        }
+
+        .svc .text-green {
+            color: var(--g)
+        }
+
+        .svc .btn-green {
+            background: var(--g);
+            border-color: var(--g);
+            color: #fff;
+            font-weight: 600;
+            padding: .8rem 1.6rem;
+            border-radius: .6rem
+        }
+
+        .svc .btn-green:hover,
+        .svc .btn-green:focus {
+            background: var(--g-dark);
+            border-color: var(--g-dark);
+            color: #fff
+        }
+
+        .svc .btn-ghost {
+            border: 2px solid #7ee2a4;
+            color: #7ee2a4;
+            font-weight: 600;
+            padding: .75rem 1.5rem;
+            border-radius: .6rem
+        }
+
+        .svc .btn-ghost:hover {
+            background: #7ee2a4;
+            color: #0d1a14
+        }
+
+        .svc .hero {
+            background: linear-gradient(135deg, #0d1a14 0%, #12301f 60%, #16a34a 160%);
+            color: #fff;
+            padding: 5rem 0
+        }
+
+        .svc .hero .tag {
+            color: #7ee2a4;
+            font-weight: 600
+        }
+
+        .svc .hero .tagline {
+            color: #d3e6da
+        }
+
+        .svc .hero .note {
+            color: #a9c5b4;
+            font-size: .85rem;
+            margin-top: .6rem
+        }
+
+        .svc .hero-img {
+            border-radius: 1rem;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, .4);
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            background: #1b3a29
+        }
+
+        .svc .bg-soft {
+            background: var(--bg)
+        }
+
+        .svc .section-sub {
+            color: var(--muted);
+            max-width: 44rem
+        }
+
+        .svc .service {
+            height: 100%;
+            border: 1px solid #e3ebe6;
+            border-radius: 1rem;
+            padding: 1.6rem;
+            background: #fff;
+            transition: border-color .2s
+        }
+
+        .svc .service:hover {
+            border-color: var(--g)
+        }
+
+        .svc .service .num {
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem
+        }
+
+        .svc .service .tagline {
+            color: var(--g-dark);
+            font-weight: 600;
+            margin-bottom: .5rem
+        }
+
+        .svc .service small {
+            color: var(--g-dark);
+            font-weight: 600;
+            display: block;
+            margin-top: .6rem
+        }
+
+        .svc .chip {
+            display: inline-block;
+            background: var(--g-soft);
+            color: var(--g-dark);
+            border-radius: 2rem;
+            padding: .35rem .9rem;
+            margin: .25rem;
+            font-size: .95rem;
+            font-weight: 600
+        }
+
+        .svc .pb-card {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.1rem;
+            background: #fff;
+            border-radius: .8rem;
+            border: 1px solid #e3ebe6;
+            height: 100%
+        }
+
+        .svc .pb-card .ic {
+            flex: 0 0 2.6rem;
+            height: 2.6rem;
+            border-radius: .6rem;
+            background: var(--g);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .svc .callout {
+            height: 100%;
+            background: var(--g-soft);
+            border-left: 5px solid var(--g);
+            border-radius: .8rem;
+            padding: 1.6rem
+        }
+
+        .svc .callout h3 {
+            color: var(--g-dark)
+        }
+
+        .svc .gallery figure {
+            margin: 0
+        }
+
+        .svc .gallery img {
+            width: 100%;
+            aspect-ratio: 16/10;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 1px solid #e3ebe6
+        }
+
+        .svc .gallery figcaption {
+            margin-top: .6rem;
+            font-weight: 600;
+            color: var(--g-dark)
+        }
+
+        .svc .step {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 1.6rem
+        }
+
+        .svc .step .n {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.8rem;
+            height: 2.8rem;
+            border-radius: 50%;
+            background: var(--g);
+            color: #fff;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        /* Tick lists use Font Awesome */
+        .svc .tick1 {
+            padding-left: 0;
+            margin-bottom: 0
+        }
+
+        .svc .tick1 li {
+            margin-bottom: .7rem;
+            list-style: none;
+            padding-left: 1.9rem;
+            position: relative
+        }
+
+        .svc .tick1 li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--g);
+            position: absolute;
+            left: 0
+        }
+
+        .svc .accordion-button:not(.collapsed) {
+            background: var(--g-soft);
+            color: var(--g-dark)
+        }
+
+        .svc .accordion-button:focus {
+            box-shadow: 0 0 0 .2rem rgba(22, 163, 74, .25)
+        }
+
+        .svc .cta-band {
+            background: linear-gradient(135deg, #0d1a14, #12301f);
+            color: #fff
+        }
+
+        .svc .cta-band a.contact {
+            color: #9ff0bd;
+            text-decoration: none
+        }
+
+        .svc .cta-band i {
+            color: #9ff0bd
+        }
+
+        .svc .animate__fadeInUp {
+            --animate-duration: .8s
+        }
+    </style>
+</head>
+
+<body>
+    @@include('partials/navbar.html')
+    <section class="svc">
+
+        <header class="hero">
+            <div class="container">
+                <div class="row align-items-center g-5 pt-5 mt-5">
+                    <div class="col-lg-6">
+                        <p class="tag mb-2">GreenEFX Media</p>
+                        <h2 class="display-5 mb-3">Transform Your Imagination into Stunning AI-Powered Videos</h2>
+                        <h3 class="h4 mb-3 tagline">Imagine Beyond Limits. Create Beyond Reality.</h3>
+                        <p>GreenEFX Media combines generative AI, cinematic storytelling, 3D animation, VFX and
+                            professional post-production to create compelling commercials, product films, virtual
+                            presenters, original advertising jingles, AI music videos and episodic microdramas.</p>
+                        <div class="mt-4"><a href="#contact" class="btn btn-green btn-lg me-2 mb-2">Start Your AI Video
+                                Project</a><a href="#services" class="btn btn-ghost btn-lg me-2 mb-2">Explore Our
+                                Services</a></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="img/ai-hero.jpg"
+                            alt="AI-generated product advertisement of a bottle in a splash of juice and ice"
+                            class="img-fluid hero-img">
+                        <p class="note mb-0">Images are AI-generated conceptual illustrations, not claims of completed
+                            client work.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <h2 class="text-green">About Our AI Video Generation Services</h2>
+                        <p class="text-secondary">Artificial intelligence is changing how video content is conceived and
+                            produced. We blend AI-assisted generation with human direction, scriptwriting, visual
+                            references, continuity planning, editing, sound design and visual effects. The result is
+                            tailored content for brands, entertainment, digital advertising and multilingual audiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="bg-soft">
+            <div class="container">
+                <h2 class="text-green">Our 12 AI Video Production Services</h2>
+                <p class="section-sub mb-5">AI-assisted creativity guided by professional filmmaking.</p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">01</div>
+                            <h3 class="h5">AI Advertisement Video Production</h3>
+                            <p class="mb-0">AI-generated brand commercials, promotional films and digital video ads with
+                                creative concepts, cinematic visuals, strong messaging and professional finishing.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">02</div>
+                            <h3 class="h5">AI Product Video Generation</h3>
+                            <p class="mb-0">Transform product images and concepts into dynamic promotional films,
+                                cinematic reveals, imaginative environments and e-commerce video content.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">03</div>
+                            <h3 class="h5">AI Cinematic Video &amp; Storytelling</h3>
+                            <p class="mb-0">Produce original visual narratives, concept films, fantasy scenes, brand
+                                stories and cinematic AI sequences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">04</div>
+                            <h3 class="h5">AI Avatar &amp; Virtual Presenter Videos</h3>
+                            <p class="mb-0">Digital presenters for corporate communications, product explainers,
+                                educational videos and training content, with supported language options.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">05</div>
+                            <h3 class="h5">AI Character Animation &amp; Mascot Videos</h3>
+                            <p class="mb-0">Develop recurring AI characters, brand mascots, expressive character-based
+                                advertisements and animated stories using reference-based consistency workflows.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">06</div>
+                            <h3 class="h5">AI Social Media Reels &amp; Short Videos</h3>
+                            <p class="mb-0">Create short-form vertical and landscape content for Instagram, Facebook,
+                                YouTube Shorts and digital marketing campaigns.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">07</div>
+                            <h3 class="h5">AI Real Estate &amp; Architectural Videos</h3>
+                            <p class="mb-0">Visualize property concepts, architectural ideas and interior environments
+                                through AI-assisted promotional video production.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">08</div>
+                            <h3 class="h5">AI Multilingual Video &amp; Localization</h3>
+                            <p class="mb-0">Adapt content with translation, subtitles, AI-assisted voiceovers, supported
+                                dubbing and lip-sync workflows, including Tamil and English.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">09</div>
+                            <h3 class="h5">AI Video Editing &amp; Post-Production</h3>
+                            <p class="mb-0">Refine AI footage through editing, compositing, color grading, motion
+                                graphics, sound design and integration with live action or CGI.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">10</div>
+                            <h3 class="h5">AI Visual Effects &amp; Creative Video Transformation</h3>
+                            <p class="mb-0">Create stylized visual transformations, imaginative environments, special
+                                effects and hybrid AI/VFX advertising sequences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">11</div>
+                            <h3 class="h5">AI Advertising Jingles &amp; Song Production</h3>
+                            <p class="mb-0">Create original brand jingles, promotional songs, Tamil and multilingual
+                                advertising music, lyrics, AI-assisted compositions, vocals, festive campaign songs and
+                                accompanying AI music videos.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="service">
+                            <div class="num">12</div>
+                            <h3 class="h5">AI Microdrama Production</h3>
+                            <p class="mb-0">Develop short-form episodic dramas with original scripts, recurring
+                                characters, vertical 9:16 storytelling, dramatic cliffhangers, dialogue, dubbing,
+                                editing and delivery for digital platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXTRAS -->
+        <section id="extras">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="callout">
+                            <h3 class="h4">AI Advertising Jingles &amp; Songs – Creative Capabilities</h3>
+                            <p class="mb-0">Original lyrics and brand messaging; short advertising jingles; Tamil,
+                                English and other supported-language promotional songs; music composition and vocal
+                                production; radio and social-media audio; festival and product-launch songs; AI-assisted
+                                music video creation. Commercial use is subject to applicable music-tool licensing and
+                                rights clearances.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="callout">
+                            <h3 class="h4">AI Microdrama Production – Formats &amp; Genres</h3>
+                            <p class="mb-0">Microdramas can include romance, family stories, comedy, mystery, thrillers,
+                                action and branded storytelling. Typical project options include <strong>1–3 minute
+                                    episodes</strong>, <strong>9:16 vertical</strong> or 16:9 landscape delivery, and
+                                multi-episode series scoped to client requirements. Character continuity, performance
+                                and dialogue synchronization may require additional manual refinement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery" class="bg-soft">
+            <div class="container">
+                <h2 class="text-green mb-4">Visual Highlights</h2>
+                <div class="row g-4 gallery">
+                    <div class="col-md-4">
+                        <figure><img src="img/ai-1.jpg" alt="AI cinematic video &amp; storytelling" loading="lazy">
+                            <figcaption>AI cinematic video &amp; storytelling</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure><img src="img/ai-2.jpg" alt="Jingles, songs &amp; audio production" loading="lazy">
+                            <figcaption>Jingles, songs &amp; audio production</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure><img src="img/ai-3.jpg" alt="AI microdrama production" loading="lazy">
+                            <figcaption>AI microdrama production</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p class="section-sub mt-4 mb-0 small">Images are AI-generated conceptual illustrations, not claims of
+                    completed client work.</p>
+            </div>
+        </section>
+
+        <!-- WHY -->
+        <section id="why">
+            <div class="container">
+                <h2 class="text-green">Why Choose GreenEFX Media?</h2>
+                <div class="mb-4"></div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul class="tick1 fs-5">
+                            <li>AI-assisted creativity guided by professional filmmaking and story development</li>
+                            <li>Experience in CGI, 3D animation, motion graphics and visual effects</li>
+                            <li>Integrated video, music, dialogue, editing and audio post-production</li>
+                            <li>Reference-based workflows for character, product and brand consistency</li>
+                            <li>Multilingual content and platform-specific aspect ratios</li>
+                            <li>End-to-end production from concept to final master</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRIES -->
+
+
+        <!-- PROCESS -->
+        <section id="process">
+            <div class="container">
+                <h2 class="text-green mb-5">Our AI Video Production Process</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">1</div>
+                            <h3 class="h5">Creative Brief</h3>
+                            <p class="text-secondary mb-0">Understand objectives, audience, brand references, duration,
+                                languages and platforms.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">2</div>
+                            <h3 class="h5">Concept &amp; Script</h3>
+                            <p class="text-secondary mb-0">Develop concepts, storyboards, scripts, lyrics or episodic
+                                outlines.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">3</div>
+                            <h3 class="h5">Visual Planning</h3>
+                            <p class="text-secondary mb-0">Establish visual style, characters, products, locations and
+                                continuity references.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">4</div>
+                            <h3 class="h5">AI Generation</h3>
+                            <p class="text-secondary mb-0">Generate and iterate images, footage, music or voice assets
+                                as appropriate.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="step">
+                            <div class="n">5</div>
+                            <h3 class="h5">Refinement</h3>
+                            <p class="text-secondary mb-0">Check product accuracy, continuity, performance and technical
+                                quality.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">6</div>
+                            <h3 class="h5">Post-Production</h3>
+                            <p class="text-secondary mb-0">Edit, composite, grade, mix sound, add graphics and
+                                subtitles.</p>
+                        </div>
+                        <div class="step">
+                            <div class="n">7</div>
+                            <h3 class="h5">Approval &amp; Delivery</h3>
+                            <p class="text-secondary mb-0">Complete agreed revisions and export the required formats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+
+
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-green mb-4">Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqs">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq1">Can you make AI advertisements
+                                        from my product photographs?</button></h3>
+                                <div id="fq1" class="accordion-collapse collapse show" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. Supplied images can be used as references; exact
+                                        product fidelity depends on the source material and production workflow.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq2">Can you create Tamil jingles and
+                                        promotional songs?</button></h3>
+                                <div id="fq2" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We offer original lyrics, AI-assisted music and
+                                        vocals, audio finishing and optional promotional videos.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq3">Can you produce a complete AI
+                                        microdrama series?</button></h3>
+                                <div id="fq3" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes. We can develop scripts, characters, episodic
+                                        visuals, dialogue, editing, subtitles and delivery for an agreed series scope.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq4">Can AI characters remain
+                                        consistent?</button></h3>
+                                <div id="fq4" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">We use references and manual refinement to improve
+                                        consistency, though complex scenes may require regeneration.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq5">Can AI videos be used
+                                        commercially?</button></h3>
+                                <div id="fq5" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Commercial use depends on tool terms, music and asset
+                                        licenses, likeness permissions and applicable advertising rules.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq6">Can you produce Tamil and
+                                        English videos?</button></h3>
+                                <div id="fq6" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Yes, including supported voiceovers, subtitles and
+                                        localization.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq7">How much does production
+                                        cost?</button></h3>
+                                <div id="fq7" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Pricing depends on length, complexity, number of scenes
+                                        or episodes, music requirements, revisions and output formats.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#fq8">How long does production
+                                        take?</button></h3>
+                                <div id="fq8" class="accordion-collapse collapse" data-bs-parent="#faqs">
+                                    <div class="accordion-body">Schedules vary with creative complexity, iteration
+                                        needs, continuity and post-production scope.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA / CONTACT -->
+        <section id="contact" class="cta-band text-center">
+            <div class="container">
+                <h2 class="display-6 mb-2">Ready to Bring Your Ideas to Life?</h2>
+
+                <p class="mx-auto mb-4" style="max-width:44rem;color:#d3e6da">Create extraordinary AI-powered videos
+                    with GreenEFX Media. From product advertisements and brand jingles to complete episodic microdramas,
+                    we help turn creative ideas into finished visual stories.</p>
+                <p class="mb-1"><i class="fa-solid fa-phone me-2"></i><a class="contact" href="tel:+919940338307">+91
+                        99403 38307</a>
+                    <span class="mx-2 d-none d-sm-inline">|</span><br class="d-sm-none">
+                    <i class="fa-solid fa-envelope me-2"></i><a class="contact"
+                        href="mailto:greenefx.media@gmail.com">greenefx.media@gmail.com</a>
+                </p>
+                <p class="mb-4"><i class="fa-solid fa-location-dot me-2"></i>Sathuvachari, Vellore, Tamil Nadu | <a
+                        class="contact" href="https://www.greenefxmedia.com">www.greenefxmedia.com</a></p>
+                <a href="mailto:greenefx.media@gmail.com?subject=AI%20Video%20Production%20Enquiry"
+                    class="btn btn-green btn-lg">Start Your AI Video Project</a>
+                <p class="mt-4 mb-0" style="color:#a9c5b4">GreenEFX Media — Creative. Digital. Impactful.</p>
+            </div>
+        </section>
+
+    </section>
+    @@include('partials/footer.html')
+
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","name":"AI Video Generation & Production","serviceType":"AI Video Production in Vellore",
+"provider":{"@type":"LocalBusiness","name":"GreenEFX Media","telephone":"+91 99403 38307","email":"greenefx.media@gmail.com","url":"https://www.greenefxmedia.com",
+"address":{"@type":"PostalAddress","streetAddress":"Sathuvachari","addressLocality":"Vellore","addressRegion":"Tamil Nadu","addressCountry":"IN"}},
+"areaServed":"Vellore"}
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector(".site-nav");
+            if (!navbar) return;
+            window.addEventListener("scroll", function () {
+                navbar.classList.toggle("scrolled", window.scrollY > 50);
+            });
+        });
+    </script>
+    <script>
+        // WOW.js fade-up animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const targets = document.querySelectorAll(
+                ".svc .hero .col-lg-6, .svc section h2, .svc .section-sub, " +
+                ".svc #about .col-lg-9 > *, .svc .service, .svc .pb-card, .svc .callout, .svc .gallery figure, " +
+                ".svc .chip, .svc .step, .svc .tick1 li, .svc .accordion-item, " +
+                ".svc .cta-band .btn-green, .svc .cta-band .container > p"
+            );
+            const counts = new Map();
+            targets.forEach(function (el) {
+                const group = el.matches("li") ? el.parentElement : (el.closest(".row") || el.parentElement);
+                const i = counts.get(group) || 0;
+                counts.set(group, i + 1);
+                el.classList.add("wow", "animate__fadeInUp");
+                el.setAttribute("data-wow-delay", ((i % 4) * 0.12).toFixed(2) + "s");
+            });
+            new WOW({ boxClass: "wow", animateClass: "animate__animated", offset: 60, mobile: true, live: false }).init();
+        });
+    </script>
+</body>
+
+</html>
