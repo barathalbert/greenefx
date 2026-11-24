@@ -1,0 +1,339 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\footer.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\partials\\footer.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\index.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\index.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\scss\\main.scss||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\scss\\main.scss||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\navbar.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\partials\\navbar.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\new-coures.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\new-coures.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\grapics.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\grapics.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\computer.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\computer.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\why.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\partials\\why.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\services.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\partials\\services.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\job.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\job.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\careers.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\careers.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\about.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\partials\\about.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\gallery.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\gallery.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ads.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ads.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ai_video.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ai_video.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\website.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\website.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\theater.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\theater.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ledwall.html||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ledwall.html||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "grapics.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\grapics.html",
+              "RelativeDocumentMoniker": "src\\grapics.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\grapics.html",
+              "RelativeToolTip": "src\\grapics.html",
+              "ViewState": "AgIAADgBAAAAAAAAAAAAAEMBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-24T05:11:49.431Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "computer.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\computer.html",
+              "RelativeDocumentMoniker": "src\\computer.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\computer.html",
+              "RelativeToolTip": "src\\computer.html",
+              "ViewState": "AgIAACcBAAAAAAAAAAAAAC0BAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-24T05:05:08.225Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "why.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\why.html",
+              "RelativeDocumentMoniker": "src\\partials\\why.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\why.html",
+              "RelativeToolTip": "src\\partials\\why.html",
+              "ViewState": "AgIAADgBAAAAAAAAAAAAAEsBAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-24T04:39:01.546Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "services.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\services.html",
+              "RelativeDocumentMoniker": "src\\partials\\services.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\services.html",
+              "RelativeToolTip": "src\\partials\\services.html",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T13:41:59.507Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "navbar.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\navbar.html",
+              "RelativeDocumentMoniker": "src\\partials\\navbar.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\navbar.html",
+              "RelativeToolTip": "src\\partials\\navbar.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T09:05:20.927Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\index.html",
+              "RelativeDocumentMoniker": "src\\index.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\index.html",
+              "RelativeToolTip": "src\\index.html",
+              "ViewState": "AgIAAP4BAAAAAAAAAAAcwBcCAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T07:33:38.711Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "website.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\website.html",
+              "RelativeDocumentMoniker": "src\\website.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\website.html",
+              "RelativeToolTip": "src\\website.html",
+              "ViewState": "AgIAACkBAAAAAAAAAAAAAD4BAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T07:00:18.63Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ledwall.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ledwall.html",
+              "RelativeDocumentMoniker": "src\\ledwall.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ledwall.html",
+              "RelativeToolTip": "src\\ledwall.html",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAAD4BAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T06:58:52.758Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "new-coures.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\new-coures.html",
+              "RelativeDocumentMoniker": "src\\new-coures.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\new-coures.html",
+              "RelativeToolTip": "src\\new-coures.html",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T07:34:00.954Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.scss",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\scss\\main.scss",
+              "RelativeDocumentMoniker": "src\\scss\\main.scss",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\scss\\main.scss",
+              "RelativeToolTip": "src\\scss\\main.scss",
+              "ViewState": "AgIAAKYIAAAAAAAAAAAnwLYIAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2026-11-23T07:58:07.36Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "footer.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\footer.html",
+              "RelativeDocumentMoniker": "src\\partials\\footer.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\footer.html",
+              "RelativeToolTip": "src\\partials\\footer.html",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T10:07:30.328Z",
+              "EditorCaption": "",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ai_video.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ai_video.html",
+              "RelativeDocumentMoniker": "src\\ai_video.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ai_video.html",
+              "RelativeToolTip": "src\\ai_video.html",
+              "ViewState": "AgIAACYBAAAAAAAAAAAAADYBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T07:01:22.941Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "gallery.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\gallery.html",
+              "RelativeDocumentMoniker": "src\\gallery.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\gallery.html",
+              "RelativeToolTip": "src\\gallery.html",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwBoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T08:59:57.824Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "about.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\about.html",
+              "RelativeDocumentMoniker": "src\\partials\\about.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\partials\\about.html",
+              "RelativeToolTip": "src\\partials\\about.html",
+              "ViewState": "AgIAADEAAAAAAAAAAAAnwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T09:12:30.926Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "careers.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\careers.html",
+              "RelativeDocumentMoniker": "src\\careers.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\careers.html",
+              "RelativeToolTip": "src\\careers.html",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAYwH8BAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T09:27:11.213Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "job.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\job.html",
+              "RelativeDocumentMoniker": "src\\job.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\job.html",
+              "RelativeToolTip": "src\\job.html",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAAADUBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T09:28:55.037Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "theater.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\theater.html",
+              "RelativeDocumentMoniker": "src\\theater.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\theater.html",
+              "RelativeToolTip": "src\\theater.html",
+              "ViewState": "AgIAAC8BAAAAAAAAAAAAADgBAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T06:56:52.262Z",
+              "OwnerCaption": "%3"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ads.html",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ads.html",
+              "RelativeDocumentMoniker": "src\\ads.html",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\greenefx-gulp\\greenefx-gulp\\src\\ads.html",
+              "RelativeToolTip": "src\\ads.html",
+              "ViewState": "AgIAACsBAAAAAAAAAAAnwD0BAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T06:52:31.694Z",
+              "OwnerCaption": "%3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

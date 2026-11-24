@@ -36,14 +36,45 @@
   @@include('partials/why.html')
   @@include('partials/faq.html')
   @@include('partials/contact.html')
+ 
   @@include('partials/footer.html')
+
   <div class="datetime text-black d-flex justify-content-end align-items-center">
     <span id="currentDate"></span>
     <span id="currentTime"></span>
   </div>
   <script src="js/app.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
 
+  const carousel = document.getElementById("testimonialCarousel");
+
+  if (!carousel) return;
+
+  const indicators = document.querySelectorAll(
+    ".testimonial-indicators button"
+  );
+
+  carousel.addEventListener("slid.bs.carousel", function (event) {
+
+    indicators.forEach((dot, index) => {
+
+      dot.classList.remove("active");
+      dot.removeAttribute("aria-current");
+
+      if (index === event.to) {
+        dot.classList.add("active");
+        dot.setAttribute("aria-current", "true");
+      }
+
+    });
+
+  });
+
+});
+</script>
   <script>
 
     document.addEventListener("DOMContentLoaded", function () {
@@ -370,18 +401,7 @@
 
     });
   </script>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/6afeb272cf88643ca1c06740/1k7pei3uv';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -441,6 +461,80 @@
 
   </script>
   <!--End of Tawk.to Script-->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    // ===== SETTINGS =====
+    const folder = 'img/gallery';   // your folder name (use 'images/gallery' if it's inside images)
+    const total  = 25;          // number of images
+    const ext    = 'jpg';       // file extension
+    // Files must be named 1.jpg, 2.jpg ... 25.jpg
+    // ====================
+
+    const images = Array.from({ length: total }, (_, i) => `${folder}/${i + 1}.${ext}`);
+
+    const grid = document.getElementById('gxGrid');
+    const modalEl = document.getElementById('gxModal');
+    const modalImg = document.getElementById('gxModalImg');
+    const counter = document.getElementById('gxCounter');
+    const modal = new bootstrap.Modal(modalEl);
+    let current = 0;
+
+    images.forEach((src, i) => {
+      const item = document.createElement('div');
+      item.className = 'gx-item';
+      item.style.setProperty('--r', 1.5);
+
+      const el = document.createElement('img');
+      el.src = src;
+      el.loading = 'lazy';
+      el.alt = 'Gallery image ' + (i + 1);
+
+      // use each image's real shape so wide and tall photos mix automatically
+      el.addEventListener('load', () =>
+        item.style.setProperty('--r', (el.naturalWidth / el.naturalHeight).toFixed(3)));
+
+      // hide the slot if a file is missing
+      el.addEventListener('error', () => item.remove());
+
+      item.appendChild(el);
+      item.addEventListener('click', () => { show(i); modal.show(); });
+      grid.appendChild(item);
+    });
+
+    function show(i) {
+      current = (i + images.length) % images.length;
+      modalImg.src = images[current];
+      counter.textContent = (current + 1) + ' / ' + images.length;
+    }
+
+    document.getElementById('gxPrev').onclick = () => show(current - 1);
+    document.getElementById('gxNext').onclick = () => show(current + 1);
+
+    document.addEventListener('keydown', e => {
+      if (!modalEl.classList.contains('show')) return;
+      if (e.key === 'ArrowLeft') show(current - 1);
+      if (e.key === 'ArrowRight') show(current + 1);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const nav = document.getElementById("nav");
+    const toggler = document.querySelector(".custom-toggler");
+
+    if (!nav || !toggler) return;
+
+    nav.addEventListener("shown.bs.collapse", function () {
+        toggler.setAttribute("aria-expanded", "true");
+    });
+
+    nav.addEventListener("hidden.bs.collapse", function () {
+        toggler.setAttribute("aria-expanded", "false");
+    });
+
+});
+</script>
 </body>
 
 </html>
