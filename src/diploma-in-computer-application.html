@@ -402,43 +402,34 @@
                       </div>
                     </div>
 
-                    <!-- Email & Phone -->
+                    <!-- Email (optional) & Phone -->
                     <div class="row g-4 mb-4">
                       <div class="col-md-6">
-                        <label class="form-label" for="ceEmail">Email Address</label>
+                        <label class="form-label" for="ceEmail">Email Address <small class="text-muted">(optional)</small></label>
                         <input type="email" class="form-control" id="ceEmail" name="email" placeholder="john@example.com"
-                          maxlength="100" required>
+                          maxlength="100">
                         <div class="invalid-feedback">Enter a valid email address.</div>
                       </div>
                       <div class="col-md-6">
                         <label class="form-label" for="cePhone">Phone Number</label>
                         <input type="tel" class="form-control" id="cePhone" name="phone" placeholder="+91 9876543210"
-                          pattern="(?:\+91[\s\-]?)?[6-9][0-9]{9}" required>
+                          pattern="(?:\+91[\s\-]?)?[6-9][0-9]{9}"   maxlength="10"
+  minlength="10" required>
                         <div class="invalid-feedback">Enter a valid 10-digit Indian mobile number.</div>
                       </div>
                     </div>
-<div class="row g-4 mb-4">
 
-            <div class="col-md-6">
-              <label class="form-label" for="ceJoinDate">
-                Preferred Date of Joining
-              </label>
+                    <!-- Preferred Date of Joining -->
+                    <div class="row g-4 mb-4">
+                      <div class="col-md-6">
+                        <label class="form-label" for="ceJoinDate">Preferred Date of Joining</label>
+                        <div class="position-relative">
+                          <input type="date" class="form-control" id="ceJoinDate" name="joinDate" required>
+                        </div>
+                        <div class="invalid-feedback">Please select your preferred joining date.</div>
+                      </div>
+                    </div>
 
-              <div class="position-relative">
-                <input
-                  type="date"
-                  class="form-control"
-                  id="ceJoinDate"
-                  name="joinDate"
-                  required>
-              </div>
-
-              <div class="invalid-feedback">
-                Please select your preferred joining date.
-              </div>
-            </div>
-
-          </div>
                     <!-- Message -->
                     <div class="mb-4">
                       <label class="form-label" for="ceMessage">Message</label>
