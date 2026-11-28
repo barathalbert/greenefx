@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- SEO Title (about 60 characters) -->
+<title>Multimedia, Animation & AI Courses in Vellore | GreenEFX</title>
+
+<!-- Meta Description (about 155 characters) -->
+<meta
+  name="description"
+  content="Join GreenEFX Media in Vellore for professional courses in multimedia design, 3D animation, video editing, graphic design, digital marketing and AI creativity."
+/>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.greenefxmedia.com/gallery" />
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Portfolio &amp; Video Gallery | GreenEFX Media Vellore"
+    />
+    <meta
+      property="og:description"
+      content="Watch our latest ad films, theatre commercials, 3D animations, and AI videos produced in Vellore."
+    />
+    <meta property="og:url" content="https://www.greenefxmedia.com/gallery" />
+    <meta property="og:site_name" content="GreenEFX Media" />
+    <meta
+      property="og:image"
+      content="https://www.greenefxmedia.com/img/gallery/gallery-banner.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfolio &amp; Video Gallery | GreenEFX Media Vellore"
+    />
+    <meta
+      name="twitter:description"
+      content="Watch our latest ad films, theatre commercials, 3D animations, and AI videos produced in Vellore."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.greenefxmedia.com/img/gallery/gallery-banner.jpg"
+    />
+
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="vendor/bootstrap-icons/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      .site-nav {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+}
+    </style>
+  </head>
+
+  <body>
+    @@include('partials/navbar.html')
+
+<section id="admission" class="py-5 bg-light mt-5">
+  <div class="container mt-5">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="training-title">Student Information</h2>
+      <div class="title-line"></div>
+      <p class="training-subtitle">
+        Fill in your details and our team will contact you shortly.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-xl-8">
+        <div class="card border-0 shadow-sm rounded-4">
+          <div class="card-body p-4 p-md-5">
+
+            <!-- THANK YOU (hidden until success) -->
+            <div id="studentThanks" class="text-center py-5 d-none">
+              <i class="bi bi-check-circle-fill text-success" style="font-size:4rem;"></i>
+              <h3 class="mt-3">Thank You!</h3>
+              <p class="mb-4">
+                Your details have been received. Our team will contact you shortly.
+              </p>
+              <button type="button" class="btn submit-btn" id="studentAnother">
+                Submit another enquiry
+              </button>
+            </div>
+
+            <!-- FORM -->
+            <form id="studentForm" class="needs-validation" novalidate>
+
+              <!-- honeypot (bots fill it, people never see it) -->
+              <input type="text" name="website" tabindex="-1" autocomplete="off"
+                style="position:absolute;left:-9999px;" aria-hidden="true">
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="stName">Student Name</label>
+                  <input type="text" class="form-control" id="stName" name="name"
+                    placeholder="Full name" autocomplete="name"
+                    minlength="2" maxlength="60" pattern="[A-Za-z .]+" required>
+                  <div class="invalid-feedback">Enter a valid name (letters only).</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="stPhone">Phone Number</label>
+                  <input type="tel" class="form-control" id="stPhone" name="phone"
+                    placeholder="9876543210" inputmode="numeric" autocomplete="tel-national"
+                    pattern="[6-9][0-9]{9}" minlength="10" maxlength="10" required>
+                  <div class="invalid-feedback">Enter a valid 10-digit mobile number.</div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="stFather">Father's Name</label>
+                  <input type="text" class="form-control" id="stFather" name="fatherName"
+                    placeholder="Father's full name" minlength="2" maxlength="60"
+                    pattern="[A-Za-z .]+" required>
+                  <div class="invalid-feedback">Enter a valid father's name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="stMother">Mother's Name</label>
+                  <input type="text" class="form-control" id="stMother" name="motherName"
+                    placeholder="Mother's full name" minlength="2" maxlength="60"
+                    pattern="[A-Za-z .]+" required>
+                  <div class="invalid-feedback">Enter a valid mother's name.</div>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="stSchool">School / College Name</label>
+                  <input type="text" class="form-control" id="stSchool" name="school"
+                    placeholder="Name of your school or college" minlength="3" maxlength="120" required>
+                  <div class="invalid-feedback">Please enter your school or college name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="stEmail">Email <small class="text-muted">(optional)</small></label>
+                  <input type="email" class="form-control" id="stEmail" name="email"
+                    placeholder="you@example.com" autocomplete="email" maxlength="100">
+                  <div class="invalid-feedback">Enter a valid email address.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label" for="stAddress">Address</label>
+                <textarea class="form-control" id="stAddress" name="address" rows="3"
+                  placeholder="Door no., street, area, city, pincode"
+                  minlength="10" maxlength="300" required></textarea>
+                <div class="invalid-feedback">Please enter your full address (at least 10 characters).</div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="stCourse">Course</label>
+                  <select class="form-select" id="stCourse" name="course" required>
+                    <option value="">Select a course</option>
+                    <option>Multimedia Design &amp; AI Creativity</option>
+                    <option>Graphic Design &amp; Print Media</option>
+                    <option>Diploma in Computer Application</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a course.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="stFaculty">Faculty</label>
+                  <select class="form-select" id="stFaculty" name="faculty" required>
+                    <option value="">Select faculty</option>
+                    <option>Madhumitha</option>
+                    <option>Dinesh Kumar</option>
+                    <option>Loganathan</option>
+                    <option>Hema</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a faculty.</div>
+                </div>
+              </div>
+
+              <div id="studentError" class="alert alert-danger d-none" role="alert">
+                Sorry, something went wrong. Please try again or call us.
+              </div>
+
+              <div class="text-end mt-4">
+                <button type="submit" class="btn submit-btn" id="studentSubmit">
+                  Submit <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    @@include('partials/footer.html')
+
+   
+    <!-- app.js must load Bootstrap's JS (bootstrap.Modal is used below) -->
+    <script src="js/app.js"></script>
+<script>
+(function () {
+  // PASTE YOUR WEB APP URL HERE
+ var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxqGppG0iKUbPVQpq4M8VrUx9dqSfD3Fl1Clemavs3iwfk8DrmiEw5iZ_UfVzTDvAlL7A/exec";
+
+  var form   = document.getElementById("studentForm");
+  var thanks = document.getElementById("studentThanks");
+  var errBox = document.getElementById("studentError");
+  var btn    = document.getElementById("studentSubmit");
+  var phone  = document.getElementById("stPhone");
+  var course = document.getElementById("stCourse");
+  var again  = document.getElementById("studentAnother");
+  if (!form) return;
+
+  function setCourse(name) {
+    if (!name) return;
+    for (var i = 0; i < course.options.length; i++) {
+      if (course.options[i].text.trim() === name) { course.selectedIndex = i; break; }
+    }
+  }
+
+  // 1) course from URL: admission.html?course=...
+  setCourse(new URLSearchParams(window.location.search).get("course"));
+
+  // 2) course from "Apply Now" buttons on the same page
+  document.querySelectorAll("[data-course]").forEach(function (a) {
+    a.addEventListener("click", function () { setCourse(a.dataset.course); });
+  });
+
+  // phone: digits only, remove +91 / 0 if pasted
+  phone.addEventListener("input", function () {
+    var v = phone.value.replace(/\D/g, "");
+    if (v.length > 10 && v.indexOf("91") === 0) v = v.slice(2);
+    if (v.length > 10 && v.charAt(0) === "0") v = v.slice(1);
+    phone.value = v.slice(0, 10);
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errBox.classList.add("d-none");
+
+    if (!form.checkValidity()) {
+      form.classList.add("was-validated");
+      var bad = form.querySelector(":invalid");
+      if (bad) bad.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = "Sending...";
+
+    fetch(SCRIPT_URL, { method: "POST", body: new FormData(form) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (res.result !== "success") throw new Error(res.message || "Failed");
+        form.classList.add("d-none");
+        thanks.classList.remove("d-none");
+        thanks.scrollIntoView({ behavior: "smooth", block: "center" });
+      })
+      .catch(function () {
+        errBox.classList.remove("d-none");
+      })
+      .finally(function () {
+        btn.disabled = false;
+        btn.innerHTML = 'Submit <i class="bi bi-send-fill ms-2"></i>';
+      });
+  });
+
+  // "Submit another enquiry" brings the form back
+  again.addEventListener("click", function () {
+    form.reset();
+    form.classList.remove("was-validated", "d-none");
+    thanks.classList.add("d-none");
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+})();
+</script>
+    <!-- Testimonial indicators (safe if carousel is missing) -->
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("testimonialCarousel");
+        if (!carousel) return;
+
+        const indicators = document.querySelectorAll(
+          ".testimonial-indicators button",
+        );
+
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+          indicators.forEach((dot, index) => {
+            dot.classList.remove("active");
+            dot.removeAttribute("aria-current");
+            if (index === event.to) {
+              dot.classList.add("active");
+              dot.setAttribute("aria-current", "true");
+            }
+          });
+        });
+      });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW({
+        animateClass: "animate__animated",
+        offset: 0,
+        mobile: true,
+      }).init();
+    </script>
+
+    <!-- Stat counters (safe if none exist) -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+       // Navbar scroll effect
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector(".site-nav");
+
+        if (!navbar) return;
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+      });
+    </script>
+
+
+
+
+  </body>
+</html>

@@ -1,575 +1,713 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenEFX Media: 3D Animation, VFX, Digital Marketing Training in Vellore</title>
-  <meta name="description"
-    content="Discover the best animation and training courses in Vellore! Specializing in VFX, 3D Animation, Digital Marketing, and more. Enroll now for summer courses!">
-  <meta name="keywords"
-    content="animation, vfx, 3d animation, digital marketing, advertisement, computer training, summer course, movie animation">
-  <link rel="icon" type="image/png" href="img/fav.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&family=Roboto+Slab:wght@100..900&display=swap"
-    rel="stylesheet">
-  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <style>
-    .site-nav {
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-      padding: 10px 0;
-    }
+    <!-- SEO Title -->
+    <title>Portfolio &amp; Video Gallery | GreenEFX Media Vellore</title>
 
-    /* Category headings */
-    .gx-section-title {
-      font-size: 35px;
-      font-weight: 800;
-      margin: 40px 0 16px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-      color: #078b25;
-    }
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Explore GreenEFX Media's portfolio of 3D animation, medical animation, theatre ads, corporate videos, and AI video productions in Vellore."
+    />
 
-    /* Play button shown on video thumbnails */
-    .gx-item { position: relative; }
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.greenefxmedia.com/gallery" />
 
-    .gx-play {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 64px;
-      height: 64px;
-      transform: translate(-50%, -50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.6);
-      border: 2px solid rgba(255, 255, 255, 0.9);
-      pointer-events: none;
-      transition: transform .2s ease, background .2s ease;
-    }
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Portfolio &amp; Video Gallery | GreenEFX Media Vellore"
+    />
+    <meta
+      property="og:description"
+      content="Watch our latest ad films, theatre commercials, 3D animations, and AI videos produced in Vellore."
+    />
+    <meta property="og:url" content="https://www.greenefxmedia.com/gallery" />
+    <meta property="og:site_name" content="GreenEFX Media" />
+    <meta
+      property="og:image"
+      content="https://www.greenefxmedia.com/img/gallery/gallery-banner.jpg"
+    />
 
-    .gx-play svg { width: 28px; height: 28px; margin-left: 3px; fill: #fff; }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfolio &amp; Video Gallery | GreenEFX Media Vellore"
+    />
+    <meta
+      name="twitter:description"
+      content="Watch our latest ad films, theatre commercials, 3D animations, and AI videos produced in Vellore."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.greenefxmedia.com/img/gallery/gallery-banner.jpg"
+    />
 
-    .gx-item.is-video:hover .gx-play {
-      transform: translate(-50%, -50%) scale(1.12);
-      background: #e62117;
-    }
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="vendor/bootstrap-icons/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      .site-nav {
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 10px 0;
+      }
 
-    /* Video player inside the modal */
-    #gxVideoWrap { background: #000; border-radius: .5rem; overflow: hidden; }
-    #gxVideoWrap iframe { border: 0; }
-  </style>
-</head>
+      /* Category headings */
+      .gx-section-title {
+        font-size: 35px;
+        font-weight: 800;
+        margin: 40px 0 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        color: #078b25;
+      }
 
-<body>
+      /* Play button shown on video thumbnails */
+      .gx-item {
+        position: relative;
+      }
 
-  @@include('partials/navbar.html')
+      .gx-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 64px;
+        height: 64px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid rgba(255, 255, 255, 0.9);
+        pointer-events: none;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
+      }
 
-  <section class="gx-gallery mb-5 pt-5" id="gallery">
+      .gx-play svg {
+        width: 28px;
+        height: 28px;
+        margin-left: 3px;
+        fill: #fff;
+      }
 
-    <div>
-      <h2 class="contact-heading text-center">Gallery</h2>
-      <p class="text-center">Click any image to zoom, or any video thumbnail to play.</p>
-    </div>
+      .gx-item.is-video:hover .gx-play {
+        transform: translate(-50%, -50%) scale(1.12);
+        background: #e62117;
+      }
 
-    <div class="container">
-      <div id="gxSections"></div>
-    </div>
+      /* Video player inside the modal */
+      #gxVideoWrap {
+        background: #000;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+      #gxVideoWrap iframe {
+        border: 0;
+      }
+    </style>
+  </head>
 
-    <!-- Zoom / video modal -->
-    <div class="modal fade" id="gxModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
-          <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal"
-            aria-label="Close"></button>
-          <div class="position-relative text-center">
-            <button class="gx-nav prev" id="gxPrev" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+  <body>
+    @@include('partials/navbar.html')
 
-            <!-- image mode -->
-            <img id="gxModalImg" class="img-fluid rounded" alt="Gallery image">
+    <section class="gx-gallery mb-5 pt-5" id="gallery">
+      <div>
+        <h2 class="contact-heading text-center">Gallery</h2>
+        <p class="text-center">
+          Click any image to zoom, or any video thumbnail to play.
+        </p>
+      </div>
 
-            <!-- video mode -->
-            <div class="ratio ratio-16x9 d-none" id="gxVideoWrap">
-              <iframe id="gxVideo" src="" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+      <div class="container">
+        <div id="gxSections"></div>
+      </div>
+
+      <!-- Zoom / video modal -->
+      <div class="modal fade" id="gxModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+          <div class="modal-content bg-transparent border-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white ms-auto mb-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="position-relative text-center">
+              <button class="gx-nav prev" id="gxPrev" aria-label="Previous">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+
+              <!-- image mode -->
+              <img
+                id="gxModalImg"
+                class="img-fluid rounded"
+                alt="Gallery image"
+              />
+
+              <!-- video mode -->
+              <div class="ratio ratio-16x9 d-none" id="gxVideoWrap">
+                <iframe
+                  id="gxVideo"
+                  src=""
+                  title="YouTube video player"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <button class="gx-nav next" id="gxNext" aria-label="Next">
+                <i class="bi bi-chevron-right"></i>
+              </button>
             </div>
-
-            <button class="gx-nav next" id="gxNext" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+            <p class="text-white text-center mt-2 mb-0" id="gxCounter"></p>
           </div>
-          <p class="text-white text-center mt-2 mb-0" id="gxCounter"></p>
         </div>
       </div>
+    </section>
+
+    @@include('partials/footer.html')
+
+    <div
+      class="datetime text-black d-flex justify-content-end align-items-center"
+    >
+      <span id="currentDate"></span>
+      <span id="currentTime"></span>
     </div>
 
-  </section>
+    <!-- app.js must load Bootstrap's JS (bootstrap.Modal is used below) -->
+    <script src="js/app.js"></script>
 
-  @@include('partials/footer.html')
+    <!-- Testimonial indicators (safe if carousel is missing) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.getElementById("testimonialCarousel");
+        if (!carousel) return;
 
-  <div class="datetime text-black d-flex justify-content-end align-items-center">
-    <span id="currentDate"></span>
-    <span id="currentTime"></span>
-  </div>
-
-  <!-- app.js must load Bootstrap's JS (bootstrap.Modal is used below) -->
-  <script src="js/app.js"></script>
-
-  <!-- Testimonial indicators (safe if carousel is missing) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const carousel = document.getElementById("testimonialCarousel");
-      if (!carousel) return;
-
-      const indicators = document.querySelectorAll(".testimonial-indicators button");
-
-      carousel.addEventListener("slid.bs.carousel", function (event) {
-        indicators.forEach((dot, index) => {
-          dot.classList.remove("active");
-          dot.removeAttribute("aria-current");
-          if (index === event.to) {
-            dot.classList.add("active");
-            dot.setAttribute("aria-current", "true");
-          }
-        });
-      });
-    });
-  </script>
-
-  <!-- Background canvas + navbar scroll effect -->
-  <script>
-    (function () {
-      const c = document.getElementById('bg');
-      if (!c) return;
-
-      const x = c.getContext('2d');
-      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      let W, H, stars = [];
-
-      function resize() {
-        const r = c.parentElement.getBoundingClientRect();
-        const d = Math.min(window.devicePixelRatio || 1, 2);
-        W = r.width;
-        H = r.height;
-        c.width = W * d;
-        c.height = H * d;
-        x.setTransform(d, 0, 0, d, 0, 0);
-
-        stars = Array.from({ length: Math.round(W * H / 9000) }, () => ({
-          x: Math.random() * W,
-          y: Math.random() * H * 0.7,
-          r: Math.random() * 1.8 + 0.5,
-          p: Math.random() * 6.28,
-          s: Math.random() * 2 + 0.5
-        }));
-      }
-
-      window.addEventListener('resize', resize);
-      resize();
-
-      const layers = [
-        { y: 0.52, a: 0.13, sp: 0.00018, f: 3.2, c0: 'rgba(33,120,180,.75)', c1: 'rgba(15,60,105,.2)' },
-        { y: 0.60, a: 0.10, sp: 0.00026, f: 4.5, c0: 'rgba(24,95,150,.75)', c1: 'rgba(15,55,95,.2)' },
-        { y: 0.70, a: 0.08, sp: 0.00036, f: 6.0, c0: 'rgba(18,70,115,.85)', c1: 'rgba(19,58,94,.3)' }
-      ];
-
-      function ridge(t, L, k) {
-        const u = k / W;
-        return H * L.y - H * L.a * (
-          Math.sin(u * L.f * 6.28 + t * L.sp * 0.6) * 0.45 +
-          Math.sin(u * L.f * 13 + t * L.sp) * 0.3 +
-          Math.abs(Math.sin(u * L.f * 27 - t * L.sp * 1.4)) * 0.25
+        const indicators = document.querySelectorAll(
+          ".testimonial-indicators button",
         );
-      }
 
-      function frame(t) {
-        x.clearRect(0, 0, W, H);
-
-        for (const s of stars) {
-          const blink = Math.sin(t * 0.001 * s.s + s.p);
-          x.globalAlpha = reduce ? 0.8 : 0.15 + 0.95 * Math.pow(Math.abs(blink), 3);
-          x.fillStyle = '#ffffff';
-          x.shadowBlur = 8;
-          x.shadowColor = 'rgba(255,255,255,0.9)';
-          x.beginPath();
-          x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-          x.fill();
-        }
-
-        x.globalAlpha = 1;
-        x.shadowBlur = 0;
-
-        for (const L of layers) {
-          const g = x.createLinearGradient(0, H * (L.y - L.a), 0, H);
-          g.addColorStop(0, L.c0);
-          g.addColorStop(1, L.c1);
-          x.fillStyle = g;
-          x.beginPath();
-          x.moveTo(0, H);
-          for (let k = 0; k <= W; k += 8) {
-            x.lineTo(k, ridge(reduce ? 0 : t, L, k));
-          }
-          x.lineTo(W, H);
-          x.closePath();
-          x.fill();
-        }
-
-        if (!reduce) requestAnimationFrame(frame);
-      }
-
-      requestAnimationFrame(frame);
-    })();
-
-    // Navbar scroll effect
-    document.addEventListener("DOMContentLoaded", function () {
-      const navbar = document.querySelector(".site-nav");
-      if (!navbar) return;
-
-      window.addEventListener("scroll", function () {
-        navbar.classList.toggle("scrolled", window.scrollY > 50);
-      });
-    });
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-    new WOW({
-      animateClass: 'animate__animated',
-      offset: 0,
-      mobile: true
-    }).init();
-  </script>
-
-  <!-- Stat counters (safe if none exist) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const counters = document.querySelectorAll(".stat");
-      if (!counters.length) return;
-
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-
-          const counter = entry.target;
-          const target = Number(counter.dataset.count);
-          const suffix = counter.dataset.suffix || "";
-          const duration = 2000;
-          const increment = target / (duration / 16);
-          let count = 0;
-
-          function updateCounter() {
-            count += increment;
-            if (count < target) {
-              counter.textContent = Math.ceil(count) + suffix;
-              requestAnimationFrame(updateCounter);
-            } else {
-              counter.textContent = target + suffix;
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+          indicators.forEach((dot, index) => {
+            dot.classList.remove("active");
+            dot.removeAttribute("aria-current");
+            if (index === event.to) {
+              dot.classList.add("active");
+              dot.setAttribute("aria-current", "true");
             }
-          }
-
-          updateCounter();
-          observer.unobserve(counter);
+          });
         });
-      }, { threshold: 0.5 });
-
-      counters.forEach(counter => observer.observe(counter));
-    });
-  </script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- Enquiry form (only runs if the form exists on the page) -->
-  <script>
-    const enquiryForm1 = document.getElementById("enquiryForm");
-
-    if (enquiryForm1) {
-      const submitBtn1 = document.getElementById("submitBtn1");
-      const thankYouMessage1 = document.getElementById("thankYouMessage1");
-      const formError1 = document.getElementById("formError1");
-
-      enquiryForm1.addEventListener("submit", async function (e) {
-        e.preventDefault();
-
-        if (!enquiryForm1.checkValidity()) {
-          enquiryForm1.reportValidity();
-          return;
-        }
-
-        submitBtn1.disabled = true;
-        submitBtn1.textContent = "Submitting...";
-        formError1.classList.add("d-none");
-
-        try {
-          const formData1 = new FormData(enquiryForm1);
-
-          if (formData1.get("website1")) {
-            throw new Error("Invalid submission");
-          }
-
-          await fetch(
-            "https://script.google.com/macros/s/AKfycbz06l0jNWXfmrOqLwu_ByDzSJKs4WtTA3jHfZFmJ10sKgHwOuEHgFv-AL6CZQ4YBBBB/exec",
-            {
-              method: "POST",
-              mode: "no-cors",
-              body: JSON.stringify({
-                name: formData1.get("name1"),
-                email: formData1.get("email1"),
-                message: formData1.get("message1"),
-                website: formData1.get("website1")
-              })
-            }
-          );
-
-          // no-cors cannot verify backend success.
-          enquiryForm1.classList.add("d-none");
-          thankYouMessage1.classList.remove("d-none");
-          enquiryForm1.reset();
-
-        } catch (error) {
-          formError1.classList.remove("d-none");
-        } finally {
-          submitBtn1.disabled = false;
-          submitBtn1.textContent = "Submit Enquiry";
-        }
       });
-    }
-  </script>
+    </script>
 
-  <!-- Gallery: category headings, image zoom and YouTube playback -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    <!-- Background canvas + navbar scroll effect -->
+    <script>
+      (function () {
+        const c = document.getElementById("bg");
+        if (!c) return;
 
-      // ===== SETTINGS =====
-      // videos: { imageNumber: 'YouTube link' }
-      // The number is the thumbnail's file number (1.jpg -> 1, 2.jpg -> 2 ...).
-      // Any thumbnail without a link just zooms like a normal image.
-      // Example:  videos: { 1: 'https://youtu.be/abc123XYZ00', 2: 'https://www.youtube.com/watch?v=abc123XYZ00' }
-      const categories = [
-         {
-          title: 'Advertisement & Promotion Video',
-          folder: 'img/gallery/ads', total: 22, ext: 'jpg',
-          videos: {
-             1: 'https://www.youtube.com/watch?v=_wU49DrY2Q0',
-              2: 'https://www.youtube.com/watch?v=9iJUw_Qwkmo',
-              3: 'https://www.youtube.com/watch?v=anwblMm3rN4',
-              4: 'https://www.youtube.com/watch?v=xd9FjlLwnOk',
-              5: 'https://www.youtube.com/watch?v=DKp9rXjEd1o',
-              6: 'https://www.youtube.com/watch?v=exJXwG5S15o',
-              7: 'https://www.youtube.com/watch?v=-fm6Jlbg8z4',
-              8: 'https://www.youtube.com/watch?v=geG0aUyxKOw',
-              9: 'https://www.youtube.com/watch?v=iRwPHTymnck',
-              10: 'https://www.youtube.com/watch?v=nTADN1AGBXA',
-              11: 'https://www.youtube.com/watch?v=qjomQnJeWsk',
-              12: 'https://www.youtube.com/watch?v=QQbLcmjwrp4',
-              13: 'https://www.youtube.com/watch?v=tUIyg3I10Vc',
-              14: 'https://www.youtube.com/watch?v=TWr9qYn0ReA',  
-              15: 'https://www.youtube.com/watch?v=uH0Bdh7yBws',
-              16: 'https://www.youtube.com/watch?v=W9t9UrDTpV4',
-              17: 'https://www.youtube.com/watch?v=xd9FjlLwnOk',
-              18: 'https://www.youtube.com/watch?v=-xS7II9wouE',
-              19: 'https://www.youtube.com/watch?v=yB6z2_5UznQ',
-              20: 'https://www.youtube.com/watch?v=Yp9xkSrteDs',
-              21: 'https://www.youtube.com/watch?v=YTURl3k1_Qs',
-              22: 'https://www.youtube.com/watch?v=ZQ3YrEONElc',
-          }
-        },
-         {
-    title: 'Social Media & Real Estate Videos',
-    folder: 'img/gallery/3d_animations',
-    total: 16,
-    ext: 'jpg',
-    videos: {
-          1: 'https://youtube.com/shorts/ovxsmPScLEc',
-    2: 'https://youtube.com/shorts/rs19RaOIc_s',
-    3: 'https://youtube.com/shorts/Do-LI_QYXo8',
-    4: 'https://youtube.com/shorts/uDiUGTz6rVg',
-    5: 'https://youtube.com/shorts/slIOOQDnVYk',
-    6: 'https://youtube.com/shorts/4iqfPH-gxgk',
-    7: 'https://youtube.com/shorts/plJ7vs20jAI',
-    8: 'https://youtube.com/shorts/Du3woVBUxWI',
-    9: 'https://youtube.com/shorts/k8oIhS-_nWc',
-    10: 'https://youtube.com/shorts/MIMx2Ox59ho',
-    11: 'https://youtube.com/shorts/yFwIeS0lkgQ',
-    12: 'https://youtube.com/shorts/-_HhZW7hYHw',
-    13: 'https://youtube.com/shorts/Y4TXKly37WY',
-    14: 'https://youtube.com/shorts/dHcdbQ93yXg',
-    15: 'https://youtube.com/shorts/j_Em3_6XKtY',
-    16: 'https://youtube.com/shorts/Wd9gDQwYuZ0'
-    }
-},
-        {
-          title: 'Corportate Presentation Video :',
-          folder: 'img/gallery/corporation', total: 13, ext: 'jpg',
-          videos: {
-            1: 'https://www.youtube.com/watch?v=HO5ZAYjy6Aw',
-            2:'https://www.youtube.com/watch?v=JPa4xWh4cek',
-            3: 'https://www.youtube.com/watch?v=2ZzkeB35QYI',
-            4: 'https://www.youtube.com/watch?v=0w9cXWV1V0Y',
-            5 : 'https://www.youtube.com/watch?v=aQpIsQr9UEw',
-            6: 'https://www.youtube.com/watch?v=g_fKuhPoWv8',
-            7: 'https://www.youtube.com/watch?v=gs05E01P1ks',
-            8: 'https://www.youtube.com/watch?v=jrN5LkxXBa8',
-            9 : 'https://www.youtube.com/watch?v=ltXHFu1I7go',
-            10: 'https://www.youtube.com/watch?v=PU1wTzxc8dE',
-            11: 'https://www.youtube.com/watch?v=uOJysCKg5jk',
-            12: 'https://www.youtube.com/watch?v=vnNTv2zG0Gg',
-            13: 'https://www.youtube.com/watch?v=eVhpmkzhTPw',
-          }
-        },
-        {
-          title: 'Ai Videos',
-          folder: 'img/gallery/ai', total: 5, ext: 'jpg',
-          videos: {
-             1: 'https://www.youtube.com/watch?v=Jb9uiG1zbS4',
-             2: 'https://www.youtube.com/watch?v=AuA4fFCFu64',  
-             3: 'https://www.youtube.com/watch?v=mPiuKF1eKxY',
-              4: 'https://www.youtube.com/watch?v=GIKIyhupo5o', 
-              5: 'https://www.youtube.com/watch?v=oLPujTo1KL8'
-          }
-        },
-        {
-          title: 'Theatre Ads & Slides',
-          folder: 'img/gallery/theater_ads', total: 2, ext: 'jpg',
-          videos: {
-            1: 'https://www.youtube.com/watch?v=mOMIkEr6kYg',
-            2: 'https://www.youtube.com/watch?v=LFR5eBe9Rvo',
-          }
-        },
-       
+        const x = c.getContext("2d");
+        const reduce = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+        let W,
+          H,
+          stars = [];
+
+        function resize() {
+          const r = c.parentElement.getBoundingClientRect();
+          const d = Math.min(window.devicePixelRatio || 1, 2);
+          W = r.width;
+          H = r.height;
+          c.width = W * d;
+          c.height = H * d;
+          x.setTransform(d, 0, 0, d, 0, 0);
+
+          stars = Array.from({ length: Math.round((W * H) / 9000) }, () => ({
+            x: Math.random() * W,
+            y: Math.random() * H * 0.7,
+            r: Math.random() * 1.8 + 0.5,
+            p: Math.random() * 6.28,
+            s: Math.random() * 2 + 0.5,
+          }));
+        }
+
+        window.addEventListener("resize", resize);
+        resize();
+
+        const layers = [
           {
-          title: '3d Animation & Medical Animation : ',
-          folder: 'img/gallery/3d_animations', total: 7, ext: 'jpg',
-          videos: {
-            1: 'https://www.youtube.com/watch?v=s36hbQp_Qpc',
-            2: 'https://youtu.be/VqfuO-4DJSM?si=zaifyiy_VRRzjuOl',
-            3: 'https://youtu.be/f_ngITL9ku4?si=rowSm4yPrqCOh_um',
-            4: 'https://youtu.be/veX64abmeuQ?si=M7N1TPT5ojkcML3Z',
-            5: 'https://youtu.be/wNYpN2Uc0ek?si=vm4DJ1OBWOsSC54_',
-            6: 'https://youtu.be/LZ3QBIcKc44?si=-At8cp4SwpOEDWv9',
-            7: 'https://youtu.be/qk47YQa6s5A?si=kf4lx6-uzLWLehzq',
+            y: 0.52,
+            a: 0.13,
+            sp: 0.00018,
+            f: 3.2,
+            c0: "rgba(33,120,180,.75)",
+            c1: "rgba(15,60,105,.2)",
+          },
+          {
+            y: 0.6,
+            a: 0.1,
+            sp: 0.00026,
+            f: 4.5,
+            c0: "rgba(24,95,150,.75)",
+            c1: "rgba(15,55,95,.2)",
+          },
+          {
+            y: 0.7,
+            a: 0.08,
+            sp: 0.00036,
+            f: 6.0,
+            c0: "rgba(18,70,115,.85)",
+            c1: "rgba(19,58,94,.3)",
+          },
+        ];
+
+        function ridge(t, L, k) {
+          const u = k / W;
+          return (
+            H * L.y -
+            H *
+              L.a *
+              (Math.sin(u * L.f * 6.28 + t * L.sp * 0.6) * 0.45 +
+                Math.sin(u * L.f * 13 + t * L.sp) * 0.3 +
+                Math.abs(Math.sin(u * L.f * 27 - t * L.sp * 1.4)) * 0.25)
+          );
+        }
+
+        function frame(t) {
+          x.clearRect(0, 0, W, H);
+
+          for (const s of stars) {
+            const blink = Math.sin(t * 0.001 * s.s + s.p);
+            x.globalAlpha = reduce
+              ? 0.8
+              : 0.15 + 0.95 * Math.pow(Math.abs(blink), 3);
+            x.fillStyle = "#ffffff";
+            x.shadowBlur = 8;
+            x.shadowColor = "rgba(255,255,255,0.9)";
+            x.beginPath();
+            x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+            x.fill();
           }
-        },
-      
-      ];
-      // =====================
-      const sections   = document.getElementById('gxSections');
-      const modalEl    = document.getElementById('gxModal');
-      const modalImg   = document.getElementById('gxModalImg');
-      const videoWrap  = document.getElementById('gxVideoWrap');
-      const videoFrame = document.getElementById('gxVideo');
-      const counter    = document.getElementById('gxCounter');
-      if (!sections || !modalEl) return;
 
-      const modal = new bootstrap.Modal(modalEl);
+          x.globalAlpha = 1;
+          x.shadowBlur = 0;
 
-      let items = [];    // [{ img, video }] for the category open in the modal
-      let current = 0;
-
-      // Accepts youtube, watch?v=, embed/, shorts/ and live/ links
-      function youtubeId(url) {
-        if (!url) return null;
-        const m = String(url).match(/(?:youtu\.be\/|[?&]v=|embed\/|shorts\/|live\/)([\w-]{11})/);
-        return m ? m[1] : null;
-      }
-
-      const playIcon =
-        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
-      categories.forEach(cat => {
-        const section = document.createElement('div');
-        section.className = 'gx-section';
-        const heading = document.createElement('h3');
-        heading.className = 'gx-section-title';
-        heading.textContent = cat.title;
-        const grid = document.createElement('div');
-        grid.className = 'gx-grid';
-        for (let i = 1; i <= cat.total; i++) {
-          const src = `${cat.folder}/${i}.${cat.ext}`;
-          const vid = youtubeId(cat.videos && cat.videos[i]);
-          const item = document.createElement('div');
-          item.className = 'gx-item' + (vid ? ' is-video' : '');
-          item.style.setProperty('--r', 1.5);
-          item.dataset.img = src;
-          if (vid) item.dataset.video = vid;
-          const el = document.createElement('img');
-          el.src = src;
-          el.loading = 'lazy';
-          el.alt = vid ? `${cat.title} video ${i}` : `${cat.title} image ${i}`;
-          // use each image's real shape so wide and tall photos mix automatically
-          el.addEventListener('load', () =>
-            item.style.setProperty('--r', (el.naturalWidth / el.naturalHeight).toFixed(3)));
-          el.addEventListener('error', () => {
-            // no thumbnail file? use YouTube's own thumbnail for video items
-            if (vid && !el.dataset.fallback) {
-              el.dataset.fallback = '1';
-              el.src = `https://img.youtube.com/vi/${vid}/hqdefault.jpg`;
-              return;
+          for (const L of layers) {
+            const g = x.createLinearGradient(0, H * (L.y - L.a), 0, H);
+            g.addColorStop(0, L.c0);
+            g.addColorStop(1, L.c1);
+            x.fillStyle = g;
+            x.beginPath();
+            x.moveTo(0, H);
+            for (let k = 0; k <= W; k += 8) {
+              x.lineTo(k, ridge(reduce ? 0 : t, L, k));
             }
-            // otherwise remove the slot, and hide the section if it ends up empty
-            item.remove();
-            if (!grid.querySelector('.gx-item')) section.remove();
-          });
-          item.appendChild(el);
-          if (vid) {
-            const play = document.createElement('span');
-            play.className = 'gx-play';
-            play.innerHTML = playIcon;
-            item.appendChild(play);
+            x.lineTo(W, H);
+            x.closePath();
+            x.fill();
           }
-          item.addEventListener('click', () => {
-            // build the list from items that still exist (missing files are skipped)
-            const nodes = Array.from(grid.querySelectorAll('.gx-item'));
-            items = nodes.map(n => ({ img: n.dataset.img, video: n.dataset.video || null }));
-            show(nodes.indexOf(item));
-            modal.show();
-          });
-          grid.appendChild(item);
-        }
-        section.append(heading, grid);
-        sections.appendChild(section);
-      });
-      function stopVideo() {
-        videoFrame.src = '';          // unloads the player so audio stops
-      }
-      function show(i) {
-        if (!items.length) return;
-        current = (i + items.length) % items.length;
-        const it = items[current];
-        stopVideo();
-        if (it.video) {
-          modalImg.classList.add('d-none');
-          videoWrap.classList.remove('d-none');
-          videoFrame.src = `https://www.youtube.com/embed/${it.video}?autoplay=1&rel=0`;
-        } else {
-          videoWrap.classList.add('d-none');
-          modalImg.classList.remove('d-none');
-          modalImg.src = it.img;
-        }
-        counter.textContent = (current + 1) + ' / ' + items.length;
-      }
-      // stop playback whenever the popup closes
-      modalEl.addEventListener('hidden.bs.modal', stopVideo);
-      document.getElementById('gxPrev').onclick = () => show(current - 1);
-      document.getElementById('gxNext').onclick = () => show(current + 1);
-      document.addEventListener('keydown', e => {
-        if (!modalEl.classList.contains('show')) return;
-        if (e.key === 'ArrowLeft')  show(current - 1);
-        if (e.key === 'ArrowRight') show(current + 1);
-      });
-    });
-  </script>
-</body>
 
+          if (!reduce) requestAnimationFrame(frame);
+        }
+
+        requestAnimationFrame(frame);
+      })();
+
+      // Navbar scroll effect
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector(".site-nav");
+        if (!navbar) return;
+
+        window.addEventListener("scroll", function () {
+          navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW({
+        animateClass: "animate__animated",
+        offset: 0,
+        mobile: true,
+      }).init();
+    </script>
+
+    <!-- Stat counters (safe if none exist) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".stat");
+        if (!counters.length) return;
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+
+              const counter = entry.target;
+              const target = Number(counter.dataset.count);
+              const suffix = counter.dataset.suffix || "";
+              const duration = 2000;
+              const increment = target / (duration / 16);
+              let count = 0;
+
+              function updateCounter() {
+                count += increment;
+                if (count < target) {
+                  counter.textContent = Math.ceil(count) + suffix;
+                  requestAnimationFrame(updateCounter);
+                } else {
+                  counter.textContent = target + suffix;
+                }
+              }
+
+              updateCounter();
+              observer.unobserve(counter);
+            });
+          },
+          { threshold: 0.5 },
+        );
+
+        counters.forEach((counter) => observer.observe(counter));
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Enquiry form (only runs if the form exists on the page) -->
+    <script>
+      const enquiryForm1 = document.getElementById("enquiryForm");
+
+      if (enquiryForm1) {
+        const submitBtn1 = document.getElementById("submitBtn1");
+        const thankYouMessage1 = document.getElementById("thankYouMessage1");
+        const formError1 = document.getElementById("formError1");
+
+        enquiryForm1.addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          if (!enquiryForm1.checkValidity()) {
+            enquiryForm1.reportValidity();
+            return;
+          }
+
+          submitBtn1.disabled = true;
+          submitBtn1.textContent = "Submitting...";
+          formError1.classList.add("d-none");
+
+          try {
+            const formData1 = new FormData(enquiryForm1);
+
+            if (formData1.get("website1")) {
+              throw new Error("Invalid submission");
+            }
+
+            await fetch(
+              "https://script.google.com/macros/s/AKfycbz06l0jNWXfmrOqLwu_ByDzSJKs4WtTA3jHfZFmJ10sKgHwOuEHgFv-AL6CZQ4YBBBB/exec",
+              {
+                method: "POST",
+                mode: "no-cors",
+                body: JSON.stringify({
+                  name: formData1.get("name1"),
+                  email: formData1.get("email1"),
+                  message: formData1.get("message1"),
+                  website: formData1.get("website1"),
+                }),
+              },
+            );
+
+            // no-cors cannot verify backend success.
+            enquiryForm1.classList.add("d-none");
+            thankYouMessage1.classList.remove("d-none");
+            enquiryForm1.reset();
+          } catch (error) {
+            formError1.classList.remove("d-none");
+          } finally {
+            submitBtn1.disabled = false;
+            submitBtn1.textContent = "Submit Enquiry";
+          }
+        });
+      }
+    </script>
+
+    <!-- Gallery: category headings, image zoom and YouTube playback -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // ===== SETTINGS =====
+        // videos: { imageNumber: 'YouTube link' }
+        // The number is the thumbnail's file number (1.jpg -> 1, 2.jpg -> 2 ...).
+        // Any thumbnail without a link just zooms like a normal image.
+        // Example:  videos: { 1: 'https://youtu.be/abc123XYZ00', 2: 'https://www.youtube.com/watch?v=abc123XYZ00' }
+        const categories = [
+          {
+            title: "Advertisement & Promotion Video",
+            folder: "img/gallery/ads",
+            total: 22,
+            ext: "jpg",
+            videos: {
+              1: "https://www.youtube.com/watch?v=_wU49DrY2Q0",
+              2: "https://www.youtube.com/watch?v=uH0Bdh7yBws ",
+              3: "https://www.youtube.com/watch?v=tUIyg3I10Vc",
+              4: "https://www.youtube.com/watch?v=xd9FjlLwnOk",
+              5: "https://www.youtube.com/watch?v=xd9FjlLwnOk",
+              6: "https://www.youtube.com/watch?v=exJXwG5S15o",
+              7: "https://www.youtube.com/watch?v=-fm6Jlbg8z4",
+              8: "https://www.youtube.com/watch?v=geG0aUyxKOw",
+              9: "https://www.youtube.com/watch?v=iRwPHTymnck",
+              10: "https://www.youtube.com/watch?v=nTADN1AGBXA",
+              11: "https://www.youtube.com/watch?v=qjomQnJeWsk",
+              12: "https://www.youtube.com/watch?v=QQbLcmjwrp4",
+              13: "https://www.youtube.com/watch?v=anwblMm3rN4",
+              14: "https://www.youtube.com/watch?v=TWr9qYn0ReA",
+              15: "https://www.youtube.com/watch?v=9iJUw_Qwkmo",
+              16: "https://www.youtube.com/watch?v=W9t9UrDTpV4",
+              17: "https://www.youtube.com/watch?v=DKp9rXjEd1o",
+              18: "https://www.youtube.com/watch?v=-xS7II9wouE",
+              19: "https://www.youtube.com/watch?v=yB6z2_5UznQ",
+              20: "https://www.youtube.com/watch?v=Yp9xkSrteDs",
+              21: "https://www.youtube.com/watch?v=YTURl3k1_Qs",
+              22: "https://www.youtube.com/watch?v=ZQ3YrEONElc",
+            },
+          },
+          {
+            title: "Social Media & Real Estate Videos",
+            folder: "img/gallery/3d_animations",
+            total: 16,
+            ext: "jpg",
+            videos: {
+              1: "https://youtube.com/shorts/ovxsmPScLEc",
+              2: "https://youtube.com/shorts/rs19RaOIc_s",
+              3: "https://youtube.com/shorts/Do-LI_QYXo8",
+              4: "https://youtube.com/shorts/uDiUGTz6rVg",
+              5: "https://youtube.com/shorts/slIOOQDnVYk",
+              6: "https://youtube.com/shorts/4iqfPH-gxgk",
+              7: "https://youtube.com/shorts/plJ7vs20jAI",
+              8: "https://youtube.com/shorts/Du3woVBUxWI",
+              9: "https://youtube.com/shorts/k8oIhS-_nWc",
+              10: "https://youtube.com/shorts/MIMx2Ox59ho",
+              11: "https://youtube.com/shorts/yFwIeS0lkgQ",
+              12: "https://youtube.com/shorts/-_HhZW7hYHw",
+              13: "https://youtube.com/shorts/Y4TXKly37WY",
+              14: "https://youtube.com/shorts/dHcdbQ93yXg",
+              15: "https://youtube.com/shorts/j_Em3_6XKtY",
+              16: "https://youtube.com/shorts/Wd9gDQwYuZ0",
+            },
+          },
+          {
+            title: "Corportate Presentation Video :",
+            folder: "img/gallery/corporation",
+            total: 13,
+            ext: "jpg",
+            videos: {
+              1: "https://www.youtube.com/watch?v=HO5ZAYjy6Aw",
+              2: "https://www.youtube.com/watch?v=JPa4xWh4cek",
+              3: "https://www.youtube.com/watch?v=2ZzkeB35QYI",
+              4: "https://www.youtube.com/watch?v=0w9cXWV1V0Y",
+              5: "https://www.youtube.com/watch?v=aQpIsQr9UEw",
+              6: "https://www.youtube.com/watch?v=g_fKuhPoWv8",
+              7: "https://www.youtube.com/watch?v=gs05E01P1ks",
+              8: "https://www.youtube.com/watch?v=jrN5LkxXBa8",
+              9: "https://www.youtube.com/watch?v=ltXHFu1I7go",
+              10: "https://www.youtube.com/watch?v=PU1wTzxc8dE",
+              11: "https://www.youtube.com/watch?v=uOJysCKg5jk",
+              12: "https://www.youtube.com/watch?v=vnNTv2zG0Gg",
+              13: "https://www.youtube.com/watch?v=eVhpmkzhTPw",
+            },
+          },
+          {
+            title: "Ai Videos",
+            folder: "img/gallery/ai",
+            total: 5,
+            ext: "jpg",
+            videos: {
+              1: "https://www.youtube.com/watch?v=Jb9uiG1zbS4",
+              2: "https://www.youtube.com/watch?v=AuA4fFCFu64",
+              3: "https://www.youtube.com/watch?v=mPiuKF1eKxY",
+              4: "https://www.youtube.com/watch?v=GIKIyhupo5o",
+              5: "https://www.youtube.com/watch?v=oLPujTo1KL8",
+            },
+          },
+          {
+            title: "Theatre Ads & Slides",
+            folder: "img/gallery/theater_ads",
+            total: 2,
+            ext: "jpg",
+            videos: {
+              1: "https://www.youtube.com/watch?v=mOMIkEr6kYg",
+              2: "https://www.youtube.com/watch?v=LFR5eBe9Rvo",
+            },
+          },
+
+          {
+            title: "3d Animation & Medical Animation : ",
+            folder: "img/gallery/3d_animations",
+            total: 7,
+            ext: "jpg",
+            videos: {
+              1: "https://www.youtube.com/watch?v=s36hbQp_Qpc",
+              2: "https://youtu.be/VqfuO-4DJSM?si=zaifyiy_VRRzjuOl",
+              3: "https://youtu.be/f_ngITL9ku4?si=rowSm4yPrqCOh_um",
+              4: "https://youtu.be/veX64abmeuQ?si=M7N1TPT5ojkcML3Z",
+              5: "https://youtu.be/wNYpN2Uc0ek?si=vm4DJ1OBWOsSC54_",
+              6: "https://youtu.be/LZ3QBIcKc44?si=-At8cp4SwpOEDWv9",
+              7: "https://youtu.be/qk47YQa6s5A?si=kf4lx6-uzLWLehzq",
+            },
+          },
+        ];
+        // =====================
+        const sections = document.getElementById("gxSections");
+        const modalEl = document.getElementById("gxModal");
+        const modalImg = document.getElementById("gxModalImg");
+        const videoWrap = document.getElementById("gxVideoWrap");
+        const videoFrame = document.getElementById("gxVideo");
+        const counter = document.getElementById("gxCounter");
+        if (!sections || !modalEl) return;
+
+        const modal = new bootstrap.Modal(modalEl);
+
+        let items = []; // [{ img, video }] for the category open in the modal
+        let current = 0;
+
+        // Accepts youtube, watch?v=, embed/, shorts/ and live/ links
+        function youtubeId(url) {
+          if (!url) return null;
+          const m = String(url).match(
+            /(?:youtu\.be\/|[?&]v=|embed\/|shorts\/|live\/)([\w-]{11})/,
+          );
+          return m ? m[1] : null;
+        }
+
+        const playIcon =
+          '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+        categories.forEach((cat) => {
+          const section = document.createElement("div");
+          section.className = "gx-section";
+          const heading = document.createElement("h3");
+          heading.className = "gx-section-title";
+          heading.textContent = cat.title;
+          const grid = document.createElement("div");
+          grid.className = "gx-grid";
+          for (let i = 1; i <= cat.total; i++) {
+            const src = `${cat.folder}/${i}.${cat.ext}`;
+            const vid = youtubeId(cat.videos && cat.videos[i]);
+            const item = document.createElement("div");
+            item.className = "gx-item" + (vid ? " is-video" : "");
+            item.style.setProperty("--r", 1.5);
+            item.dataset.img = src;
+            if (vid) item.dataset.video = vid;
+            const el = document.createElement("img");
+            el.src = src;
+            el.loading = "lazy";
+            el.alt = vid
+              ? `${cat.title} video ${i}`
+              : `${cat.title} image ${i}`;
+            // use each image's real shape so wide and tall photos mix automatically
+            el.addEventListener("load", () =>
+              item.style.setProperty(
+                "--r",
+                (el.naturalWidth / el.naturalHeight).toFixed(3),
+              ),
+            );
+            el.addEventListener("error", () => {
+              // no thumbnail file? use YouTube's own thumbnail for video items
+              if (vid && !el.dataset.fallback) {
+                el.dataset.fallback = "1";
+                el.src = `https://img.youtube.com/vi/${vid}/hqdefault.jpg`;
+                return;
+              }
+              // otherwise remove the slot, and hide the section if it ends up empty
+              item.remove();
+              if (!grid.querySelector(".gx-item")) section.remove();
+            });
+            item.appendChild(el);
+            if (vid) {
+              const play = document.createElement("span");
+              play.className = "gx-play";
+              play.innerHTML = playIcon;
+              item.appendChild(play);
+            }
+            item.addEventListener("click", () => {
+              // build the list from items that still exist (missing files are skipped)
+              const nodes = Array.from(grid.querySelectorAll(".gx-item"));
+              items = nodes.map((n) => ({
+                img: n.dataset.img,
+                video: n.dataset.video || null,
+              }));
+              show(nodes.indexOf(item));
+              modal.show();
+            });
+            grid.appendChild(item);
+          }
+          section.append(heading, grid);
+          sections.appendChild(section);
+        });
+        function stopVideo() {
+          videoFrame.src = ""; // unloads the player so audio stops
+        }
+        function show(i) {
+          if (!items.length) return;
+          current = (i + items.length) % items.length;
+          const it = items[current];
+          stopVideo();
+          if (it.video) {
+            modalImg.classList.add("d-none");
+            videoWrap.classList.remove("d-none");
+            videoFrame.src = `https://www.youtube.com/embed/${it.video}?autoplay=1&rel=0`;
+          } else {
+            videoWrap.classList.add("d-none");
+            modalImg.classList.remove("d-none");
+            modalImg.src = it.img;
+          }
+          counter.textContent = current + 1 + " / " + items.length;
+        }
+        // stop playback whenever the popup closes
+        modalEl.addEventListener("hidden.bs.modal", stopVideo);
+        document.getElementById("gxPrev").onclick = () => show(current - 1);
+        document.getElementById("gxNext").onclick = () => show(current + 1);
+        document.addEventListener("keydown", (e) => {
+          if (!modalEl.classList.contains("show")) return;
+          if (e.key === "ArrowLeft") show(current - 1);
+          if (e.key === "ArrowRight") show(current + 1);
+        });
+      });
+    </script>
+  </body>
 </html>

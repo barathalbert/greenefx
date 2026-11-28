@@ -4,19 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      GreenEFX Media: 3D Animation, VFX, Digital Marketing Training in Vellore
+      GreenEFX Media | 3D Animation, VFX & Digital Marketing in Vellore
     </title>
     <meta
       name="description"
-      content="Discover the best animation and training courses in Vellore! Specializing in VFX, 3D Animation, Digital Marketing, and more. Enroll now for summer courses!"
+      content="Looking for computer training, digital marketing, or advertising in Vellore? Practical courses & ROI-focused campaigns. Call or visit us in Vellore today!"
     />
     <meta
       name="keywords"
       content="animation, vfx, 3d animation, digital marketing, advertisement, computer training, summer course, movie animation"
     />
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Computer Training, Digital Marketing & Advertising in Vellore | GreenEFX Media" | og:description="Job-ready computer courses, ROI-driven digital marketing, and high-impact advertising in Vellore."
+    />
+    <meta
+      property="og:description"
+      content="Professional 3D animation, VFX, CGI advertising, LED wall videos and digital marketing services in Vellore."
+    />
+   
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GreenEFX Media | 3D Animation & VFX" />
+    <meta
+      name="twitter:description"
+      content="Creative 3D animation, VFX, CGI advertising and digital marketing in Vellore."
+    />
+    <!-- Security Meta Tags -->
+
+
+<!-- Permissions Policy -->
+<meta http-equiv="Permissions-Policy"
+      content="camera=(), microphone=(), geolocation=()">
+
+<!-- Force HTTPS for supported browsers -->
+<meta http-equiv="Strict-Transport-Security"
+      content="max-age=31536000">
+    <meta name="robots" content="noindex">
     <link rel="icon" type="image/svg+xml" href="img/fav.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="canonical" href="https://www.greenefxmedia.com/" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -38,6 +68,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
 
   <body>
@@ -48,12 +83,7 @@
     @@include('partials/faq.html') @@include('partials/contact.html')
     @@include('partials/footer.html')
 
-    <div
-      class="datetime text-black d-flex justify-content-end align-items-center"
-    >
-      <span id="currentDate"></span>
-      <span id="currentTime"></span>
-    </div>
+
     <script src="js/app.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -66,12 +96,10 @@
         const indicators = document.querySelectorAll(
           ".testimonial-indicators button",
         );
-
         carousel.addEventListener("slid.bs.carousel", function (event) {
           indicators.forEach((dot, index) => {
             dot.classList.remove("active");
             dot.removeAttribute("aria-current");
-
             if (index === event.to) {
               dot.classList.add("active");
               dot.setAttribute("aria-current", "true");
@@ -84,7 +112,6 @@
       document.addEventListener("DOMContentLoaded", function () {
         const scriptURL =
           "https://script.google.com/macros/s/AKfycbyMPv5I6HbRfipj8_zN3xHZdzJoKicrLOdsI9auDAkF_5-Ps83ekf7qtYp1-gZ8tJuWhg/exec";
-
         const form = document.getElementById("contactForm");
         const successMessage = document.getElementById("successMessage");
         const submitButton = form.querySelector('button[type="submit"]');
@@ -132,233 +159,233 @@
         });
       });
     </script>
-<script>
-  (function () {
-    const c = document.getElementById("bg");
-    if (!c) return;
+    <script>
+      (function () {
+        const c = document.getElementById("bg");
+        if (!c) return;
 
-    const x = c.getContext("2d");
+        const x = c.getContext("2d");
 
-    const reduce = window.matchMedia(
-      "(prefers-reduced-motion: reduce)",
-    ).matches;
+        const reduce = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
 
-    let W,
-      H,
-      stars = [];
-    let cx, cy, R; // star circle: center + radius
+        let W,
+          H,
+          stars = [];
+        let cx, cy, R; // star circle: center + radius
 
-    // Offscreen canvas for mountains (so the left-to-right mask doesn't affect stars)
-    const mc = document.createElement("canvas");
-    const mx = mc.getContext("2d");
+        // Offscreen canvas for mountains (so the left-to-right mask doesn't affect stars)
+        const mc = document.createElement("canvas");
+        const mx = mc.getContext("2d");
 
-    // Resize canvas + build stars inside the circle
-    function resize() {
-      const r = c.parentElement.getBoundingClientRect();
-      const d = Math.min(window.devicePixelRatio || 1, 2);
+        // Resize canvas + build stars inside the circle
+        function resize() {
+          const r = c.parentElement.getBoundingClientRect();
+          const d = Math.min(window.devicePixelRatio || 1, 2);
 
-      W = r.width;
-      H = r.height;
+          W = r.width;
+          H = r.height;
 
-      c.width = W * d;
-      c.height = H * d;
+          c.width = W * d;
+          c.height = H * d;
 
-      x.setTransform(d, 0, 0, d, 0, 0);
+          x.setTransform(d, 0, 0, d, 0, 0);
 
-      mc.width = c.width;
-      mc.height = c.height;
-      mx.setTransform(d, 0, 0, d, 0, 0);
+          mc.width = c.width;
+          mc.height = c.height;
+          mx.setTransform(d, 0, 0, d, 0, 0);
 
-      // Position the circle on the right image.
-      // Change the selector below to match your right-side image.
-      const img = document.querySelector(".hero-image img, .hero-img");
-      if (img) {
-        const ir = img.getBoundingClientRect();
-        cx = ir.left - r.left + ir.width / 2;
-        cy = ir.top - r.top + ir.height / 2;
-        R = Math.max(ir.width, ir.height) * 0.6;
-      } else {
-        // Fallback: right side of the banner
-        cx = W * 0.58;
-        cy = H * 0.40;
-        R = Math.min(W, H) * 0.70;
-      }
+          // Position the circle on the right image.
+          // Change the selector below to match your right-side image.
+          const img = document.querySelector(".hero-image img, .hero-img");
+          if (img) {
+            const ir = img.getBoundingClientRect();
+            cx = ir.left - r.left + ir.width / 2;
+            cy = ir.top - r.top + ir.height / 2;
+            R = Math.max(ir.width, ir.height) * 0.6;
+          } else {
+            // Fallback: right side of the banner
+            cx = W * 0.58;
+            cy = H * 0.4;
+            R = Math.min(W, H) * 0.7;
+          }
 
-      // Create stars only inside the circle
-      const count = Math.round((Math.PI * R * R) / 4500);
-      stars = Array.from({ length: count }, () => {
-        const ang = Math.random() * Math.PI * 2;
-        const rad = R * Math.sqrt(Math.random()); // even spread
-        return {
-          x: cx + Math.cos(ang) * rad,
-          y: cy + Math.sin(ang) * rad,
-          d: rad / R, // 0 = center, 1 = edge
-          r: Math.random() * 1.8 + 0.5,
-          p: Math.random() * 6.28,
-          s: Math.random() * 2 + 0.5,
-        };
-      });
-    }
-
-    window.addEventListener("resize", resize);
-    resize();
-
-    // Mountain layers
-    // color = single mountain color, o = layer opacity
-    const layers = [
-      {
-        y: 0.52,
-        a: 0.13,
-        sp: 0.00018,
-        f: 3.2,
-        color: "#080F14",
-        o: 1,
-      },
-      {
-        y: 0.6,
-        a: 0.1,
-        sp: 0.00026,
-        f: 4.5,
-        color: "#080F14",
-        o: 0.9,
-      },
-      {
-        y: 10.7, // (off-screen: set to ~0.7 to show this front layer)
-        a: 0.08,
-        sp: 0.00036,
-        f: 6.0,
-        color: "#080F14",
-        o: 1,
-      },
-    ];
-
-    // Mountain ridge calculation
-    function ridge(t, L, k) {
-      const u = k / W;
-
-      return (
-        H * L.y -
-        H *
-          L.a *
-          (Math.sin(u * L.f * 6.28 + t * L.sp * 0.6) * 0.45 +
-            Math.sin(u * L.f * 13 + t * L.sp) * 0.3 +
-            Math.abs(Math.sin(u * L.f * 27 - t * L.sp * 1.4)) * 0.25)
-      );
-    }
-
-    // Animation
-    function frame(t) {
-      x.clearRect(0, 0, W, H);
-
-      // Faint circular glow behind the image (transparent on the left, visible on the right)
-      const glow = x.createRadialGradient(cx, cy, 0, cx, cy, R);
-      glow.addColorStop(0, "rgba(120,160,255,0.14)");
-      glow.addColorStop(1, "rgba(120,160,255,0)");
-      x.globalAlpha = 1;
-      x.fillStyle = glow;
-      x.beginPath();
-      x.arc(cx, cy, R, 0, Math.PI * 2);
-      x.fill();
-
-      // Horizontal mask: left = transparent, right = visible
-      x.globalCompositeOperation = "destination-in";
-      const mask = x.createLinearGradient(cx - R, 0, cx + R, 0);
-      mask.addColorStop(0, "rgba(0,0,0,0)");
-      mask.addColorStop(0.35, "rgba(0,0,0,0.25)");
-      mask.addColorStop(1, "rgba(0,0,0,1)");
-      x.fillStyle = mask;
-      x.fillRect(0, 0, W, H);
-      x.globalCompositeOperation = "source-over";
-
-      // White blinking and glowing stars (circle area only)
-      for (const s of stars) {
-        const blink = Math.sin(t * 0.001 * s.s + s.p);
-
-        let a = reduce ? 0.8 : 0.15 + 0.95 * Math.pow(Math.abs(blink), 3);
-
-        // Soft fade toward the circle edge
-        a *= 1 - Math.pow(s.d, 2) * 0.85;
-
-        // Left-to-right gradient: transparent on the left, visible on the right
-        const hx = Math.min(1, Math.max(0, (s.x - (cx - R)) / (2 * R)));
-        a *= Math.pow(hx, 1.6);
-
-        x.globalAlpha = a;
-        x.fillStyle = "#ffffff";
-
-        // Glow effect
-        x.shadowBlur = 8;
-        x.shadowColor = "rgba(255,255,255,0.9)";
-
-        x.beginPath();
-        x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        x.fill();
-      }
-
-      // Reset canvas effects
-      x.globalAlpha = 1;
-      x.shadowBlur = 0;
-
-      // Animated mountain layers (drawn offscreen, then masked)
-      mx.globalCompositeOperation = "source-over";
-      mx.clearRect(0, 0, W, H);
-
-      for (const L of layers) {
-        // Single solid color
-        mx.globalAlpha = L.o;
-        mx.fillStyle = L.color;
-
-        mx.beginPath();
-        mx.moveTo(0, H);
-
-        for (let k = 0; k <= W; k += 8) {
-          mx.lineTo(k, ridge(reduce ? 0 : t, L, k));
+          // Create stars only inside the circle
+          const count = Math.round((Math.PI * R * R) / 4500);
+          stars = Array.from({ length: count }, () => {
+            const ang = Math.random() * Math.PI * 2;
+            const rad = R * Math.sqrt(Math.random()); // even spread
+            return {
+              x: cx + Math.cos(ang) * rad,
+              y: cy + Math.sin(ang) * rad,
+              d: rad / R, // 0 = center, 1 = edge
+              r: Math.random() * 1.8 + 0.5,
+              p: Math.random() * 6.28,
+              s: Math.random() * 2 + 0.5,
+            };
+          });
         }
 
-        mx.lineTo(W, H);
-        mx.closePath();
-        mx.fill();
-      }
-      mx.globalAlpha = 1;
+        window.addEventListener("resize", resize);
+        resize();
 
-      // Horizontal mask: left = transparent, right = mountains visible
-      mx.globalCompositeOperation = "destination-in";
-      const mMask = mx.createLinearGradient(0, 0, W, 0);
-      mMask.addColorStop(0, "rgba(0,0,0,0)");
-      mMask.addColorStop(0.3, "rgba(0,0,0,0.1)");
-      mMask.addColorStop(0.65, "rgba(0,0,0,0.8)");
-      mMask.addColorStop(1, "rgba(0,0,0,1)");
-      mx.fillStyle = mMask;
-      mx.fillRect(0, 0, W, H);
-      mx.globalCompositeOperation = "source-over";
+        // Mountain layers
+        // color = single mountain color, o = layer opacity
+        const layers = [
+          {
+            y: 0.52,
+            a: 0.13,
+            sp: 0.00018,
+            f: 3.2,
+            color: "#080F14",
+            o: 1,
+          },
+          {
+            y: 0.6,
+            a: 0.1,
+            sp: 0.00026,
+            f: 4.5,
+            color: "#080F14",
+            o: 0.9,
+          },
+          {
+            y: 10.7, // (off-screen: set to ~0.7 to show this front layer)
+            a: 0.08,
+            sp: 0.00036,
+            f: 6.0,
+            color: "#080F14",
+            o: 1,
+          },
+        ];
 
-      // Draw masked mountains onto the main canvas
-      x.drawImage(mc, 0, 0, W, H);
+        // Mountain ridge calculation
+        function ridge(t, L, k) {
+          const u = k / W;
 
-      // Continue animation
-      if (!reduce) {
+          return (
+            H * L.y -
+            H *
+              L.a *
+              (Math.sin(u * L.f * 6.28 + t * L.sp * 0.6) * 0.45 +
+                Math.sin(u * L.f * 13 + t * L.sp) * 0.3 +
+                Math.abs(Math.sin(u * L.f * 27 - t * L.sp * 1.4)) * 0.25)
+          );
+        }
+
+        // Animation
+        function frame(t) {
+          x.clearRect(0, 0, W, H);
+
+          // Faint circular glow behind the image (transparent on the left, visible on the right)
+          const glow = x.createRadialGradient(cx, cy, 0, cx, cy, R);
+          glow.addColorStop(0, "rgba(120,160,255,0.14)");
+          glow.addColorStop(1, "rgba(120,160,255,0)");
+          x.globalAlpha = 1;
+          x.fillStyle = glow;
+          x.beginPath();
+          x.arc(cx, cy, R, 0, Math.PI * 2);
+          x.fill();
+
+          // Horizontal mask: left = transparent, right = visible
+          x.globalCompositeOperation = "destination-in";
+          const mask = x.createLinearGradient(cx - R, 0, cx + R, 0);
+          mask.addColorStop(0, "rgba(0,0,0,0)");
+          mask.addColorStop(0.35, "rgba(0,0,0,0.25)");
+          mask.addColorStop(1, "rgba(0,0,0,1)");
+          x.fillStyle = mask;
+          x.fillRect(0, 0, W, H);
+          x.globalCompositeOperation = "source-over";
+
+          // White blinking and glowing stars (circle area only)
+          for (const s of stars) {
+            const blink = Math.sin(t * 0.001 * s.s + s.p);
+
+            let a = reduce ? 0.8 : 0.15 + 0.95 * Math.pow(Math.abs(blink), 3);
+
+            // Soft fade toward the circle edge
+            a *= 1 - Math.pow(s.d, 2) * 0.85;
+
+            // Left-to-right gradient: transparent on the left, visible on the right
+            const hx = Math.min(1, Math.max(0, (s.x - (cx - R)) / (2 * R)));
+            a *= Math.pow(hx, 1.6);
+
+            x.globalAlpha = a;
+            x.fillStyle = "#ffffff";
+
+            // Glow effect
+            x.shadowBlur = 8;
+            x.shadowColor = "rgba(255,255,255,0.9)";
+
+            x.beginPath();
+            x.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+            x.fill();
+          }
+
+          // Reset canvas effects
+          x.globalAlpha = 1;
+          x.shadowBlur = 0;
+
+          // Animated mountain layers (drawn offscreen, then masked)
+          mx.globalCompositeOperation = "source-over";
+          mx.clearRect(0, 0, W, H);
+
+          for (const L of layers) {
+            // Single solid color
+            mx.globalAlpha = L.o;
+            mx.fillStyle = L.color;
+
+            mx.beginPath();
+            mx.moveTo(0, H);
+
+            for (let k = 0; k <= W; k += 8) {
+              mx.lineTo(k, ridge(reduce ? 0 : t, L, k));
+            }
+
+            mx.lineTo(W, H);
+            mx.closePath();
+            mx.fill();
+          }
+          mx.globalAlpha = 1;
+
+          // Horizontal mask: left = transparent, right = mountains visible
+          mx.globalCompositeOperation = "destination-in";
+          const mMask = mx.createLinearGradient(0, 0, W, 0);
+          mMask.addColorStop(0, "rgba(0,0,0,0)");
+          mMask.addColorStop(0.3, "rgba(0,0,0,0.1)");
+          mMask.addColorStop(0.65, "rgba(0,0,0,0.8)");
+          mMask.addColorStop(1, "rgba(0,0,0,1)");
+          mx.fillStyle = mMask;
+          mx.fillRect(0, 0, W, H);
+          mx.globalCompositeOperation = "source-over";
+
+          // Draw masked mountains onto the main canvas
+          x.drawImage(mc, 0, 0, W, H);
+
+          // Continue animation
+          if (!reduce) {
+            requestAnimationFrame(frame);
+          }
+        }
+
         requestAnimationFrame(frame);
-      }
-    }
+      })();
 
-    requestAnimationFrame(frame);
-  })();
+      // Navbar scroll effect
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbar = document.querySelector(".site-nav");
 
-  // Navbar scroll effect
-  document.addEventListener("DOMContentLoaded", function () {
-    const navbar = document.querySelector(".site-nav");
+        if (!navbar) return;
 
-    if (!navbar) return;
-
-    window.addEventListener("scroll", function () {
-      if (window.scrollY > 50) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-  });
-</script>
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+      });
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script>
       new WOW({
@@ -543,5 +570,77 @@
         });
       });
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "GreenEFX Media",
+        "description": "3D animation, VFX, CGI advertising, LED wall videos, website development and digital marketing services.",
+        "url": "https://www.yourdomain.com/",
+        "image": "https://www.yourdomain.com/img/og-image.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Vellore",
+          "addressRegion": "Tamil Nadu",
+          "addressCountry": "IN"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Vellore"
+        },
+        "priceRange": "$$"
+      }
+    </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.greenefxmedia.com/#localbusiness",
+  "name": "GreenEFX Media",
+  "url": "https://www.greenefxmedia.com/",
+  "telephone": "+91 93844 80041",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "#508, 1st Floor, R.T.O Road, Sathuvachari",
+    "addressLocality": "Vellore",
+    "addressRegion": "Tamil Nadu",
+    "postalCode": "632009",
+    "addressCountry": "IN"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Vellore"
+  }
+}
+</script>
+<script>
+  $(document).ready(function () {
+    $(".services-slider").slick({
+      slidesToShow: 4,          // desktop
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,      // pause between slides
+      speed: 1000,              // slide animation time (higher = smoother)
+      cssEase: "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+      useTransform: true,
+      infinite: true,
+      arrows: true,
+      dots: false,
+      pauseOnHover: true,
+      swipeToSlide: true,
+      responsive: [
+        {
+          breakpoint: 992,      // tablet
+          settings: { slidesToShow: 2 }
+        },
+        {
+          breakpoint: 576,      // mobile
+          settings: { slidesToShow: 1, arrows: false }
+        }
+      ]
+    });
+  });
+</script>
   </body>
 </html>
